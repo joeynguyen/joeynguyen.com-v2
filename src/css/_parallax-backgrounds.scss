@@ -1,0 +1,112 @@
+.parallax-window {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-top: 2px solid #888;
+	border-bottom: 2px solid #888;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.parallax-window {
+		-webkit-background-size: 1199px 406px;
+		-moz-background-size: 1199px 406px;
+		background-size: 1199px 406px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+	.parallax-window {
+		-webkit-background-size: 1440px 488px;
+		-moz-background-size: 1440px 488px;
+		background-size: 1440px 488px;
+	}
+}
+@media (min-width: 1440px) and (max-width: 1680px) {
+	.parallax-window {
+		-webkit-background-size: 1680px 569px;
+		-moz-background-size: 1680px 569px;
+		background-size: 1680px 569px;
+	}
+}
+
+.parallax-window-first {
+	height: 400px;
+	background-image: image-url('parallax/computer-internals.jpg');
+}
+.parallax-window-second {
+	height: 400px;
+	background-image: image-url('parallax/box_robots.jpg');
+	border-top: 2px solid #888;
+	border-bottom: 2px solid #888;
+}
+.parallax-window-third {
+	height: 400px;
+	background-image: image-url('parallax/thundercloud.jpg');
+	border-top: 2px solid #888;
+	border-bottom: 2px solid #888;
+}
+.parallax-window article { 
+	font-family: 'Oswald', sans-serif;
+	text-align: center; 
+	font-size: 69px;
+	color: white;
+	height: 258px;
+	position: absolute; 
+	top: 100px; 
+	width: 100%; 
+}
+.parallax-window.parallax-window-first article {
+	position: static;
+	font-family: 'Sorts Mill Goudy', Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	height: 130px;
+}
+.parallax-window.parallax-window-first article span {
+	color: #428bca;
+	font-size: 16px;
+}
+.parallax-window.parallax-window-second article {
+	font-family: 'Sorts Mill Goudy', Georgia, 'Times New Roman', Times, serif;
+	color: rgb(125, 91, 91);
+	font-size: 32px;
+	font-style: italic;
+	width: 45%;
+	top: 19%;
+	right: 12%;	
+}
+.parallax-window.parallax-window-third article {
+	color: #414141;
+	text-align: right;
+	width: 97%;
+	top: 48px;
+}
+.parallax-window.parallax-window-third article span {
+	font-size: 60px;
+}
+.article-outer-box {
+	width: 90%;
+	margin: 40px auto 0;
+	border: 1px solid #ccc;
+}
+.article-middle-box {
+	width: 99%;
+	margin: .5%;
+	border: 1px solid #ccc;
+}
+.article-inner-box {
+	width: 99.4%;
+	margin: .3%;
+	border: 1px solid #ccc;
+}
+.article-decoration {
+	margin: 20px auto 30px;
+	width: 120px;
+	height: 73px;
+	background-image: image-url('article-decoration@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+	.article-decoration {
+		background-image: image-url('article-decoration@2x.png');
+		-webkit-background-size: 120px 83px;
+		-moz-background-size: 120px 83px;
+		background-size: 120px 83px;
+	}
+}

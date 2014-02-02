@@ -1,0 +1,1159 @@
+/**************************************************
+joeynguyen.com v2 site
+***************************************************/
+/* line 1, ../../src/css/_typography.scss */
+body {
+  color: #414141;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* line 6, ../../src/css/_typography.scss */
+p {
+  font-size: 15px;
+  font-family: 'Sorts Mill Goudy', Georgia, 'Times New Roman', Times, serif;
+}
+
+/* line 10, ../../src/css/_typography.scss */
+a {
+  color: #414141;
+}
+
+/* line 13, ../../src/css/_typography.scss */
+a:hover {
+  color: #CC5500;
+  text-decoration: none;
+}
+
+/* line 17, ../../src/css/_typography.scss */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 23, ../../src/css/_typography.scss */
+h1 {
+  font-family: 'Sorts Mill Goudy', Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+}
+
+/* line 27, ../../src/css/_typography.scss */
+h2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* line 34, ../../src/css/_typography.scss */
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 13px 0 0;
+}
+
+/* line 42, ../../src/css/_typography.scss */
+h4 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* line 1, ../../src/css/_layout.scss */
+.page {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 5, ../../src/css/_layout.scss */
+.main-content {
+  z-index: 100;
+}
+
+/* line 9, ../../src/css/_layout.scss */
+.header-sprite {
+  height: 109px;
+  background-image: url('../../images/header-sprites.jpg?1390804430');
+  margin: 0 auto;
+}
+
+/* line 14, ../../src/css/_layout.scss */
+.about-sprite {
+  width: 160px;
+  background-position: 0px 0px;
+}
+
+/* line 18, ../../src/css/_layout.scss */
+.skills-sprite {
+  width: 150px;
+  background-position: -160px 0px;
+}
+
+/* line 22, ../../src/css/_layout.scss */
+.work-sprite {
+  width: 100px;
+  background-position: -310px 0px;
+}
+
+/* line 26, ../../src/css/_layout.scss */
+.credits-sprite {
+  width: 150px;
+  background-position: -411px 0px;
+  height: 156px;
+}
+
+/* line 31, ../../src/css/_layout.scss */
+.page-header {
+  background: url('../../images/page-header.png?1390600082') center bottom no-repeat;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: none;
+}
+
+@media (min-width: 768px), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* line 38, ../../src/css/_layout.scss */
+  .page-header {
+    background-image: url('../../images/page-header@2x.png?1390600082');
+    -webkit-background-size: 600px 14px;
+    -moz-background-size: 600px 14px;
+    background-size: 600px 14px;
+  }
+}
+/* line 46, ../../src/css/_layout.scss */
+.ribbon-row {
+  clear: both;
+}
+
+/* line 49, ../../src/css/_layout.scss */
+.ribbon {
+  background-image: url('../../images/line.png?1390600071');
+  width: 100px;
+  height: 28px;
+  margin: 0 auto;
+}
+
+/* line 55, ../../src/css/_layout.scss */
+.ribbon-outer {
+  position: relative;
+  height: 28px;
+  margin: 20px 0;
+  clear: both;
+}
+
+/* line 61, ../../src/css/_layout.scss */
+.ribbon-outer .ribbon {
+  background-color: white;
+  z-index: 20;
+  position: relative;
+  padding: 0 10px;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  background-repeat: no-repeat;
+  background-position: 10px 0px;
+}
+
+/* line 72, ../../src/css/_layout.scss */
+.ribbon-outer .hr {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-top: 1px solid #777;
+  content: "";
+  z-index: 10;
+}
+
+/* line 81, ../../src/css/_layout.scss */
+.turtle {
+  background-image: url('../../images/turtle.png?1390600083');
+  position: absolute;
+  top: 3000px;
+  width: 49px;
+  height: 80px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* line 89, ../../src/css/_layout.scss */
+  .turtle {
+    background-image: url('../../images/turtle@2x.png?1390600083');
+    -webkit-background-size: 49px 80px;
+    -moz-background-size: 49px 80px;
+    background-size: 49px 80px;
+  }
+}
+/* line 1, ../../src/css/_header.scss */
+header {
+  border-top: 3px solid #414141;
+}
+
+/* line 1, ../../src/css/_navigation.scss */
+.navigation {
+  width: 230px;
+  position: absolute;
+  top: 400px;
+  right: -177px;
+  margin-bottom: 0;
+  -webkit-transition: right 1.2s ease-out;
+  -moz-transition: right 1.2s ease-out;
+  -o-transition: right 1.2s ease-out;
+  transition: right 1.2s ease-out;
+  z-index: 500;
+}
+
+/* line 13, ../../src/css/_navigation.scss */
+.navigation.fixed {
+  position: fixed;
+  top: 0px;
+}
+
+/* line 17, ../../src/css/_navigation.scss */
+.navigation.wide {
+  right: 0;
+  -webkit-transition: right .8s ease-out;
+  -moz-transition: right .8s ease-out;
+  -o-transition: right .8s ease-out;
+  transition: right .8s ease-out;
+}
+
+/* line 25, ../../src/css/_navigation.scss */
+.logo h1 {
+  margin: 0;
+}
+
+/* line 29, ../../src/css/_navigation.scss */
+.logo h1 a {
+  font-weight: bold;
+  font-size: 27px;
+  text-align: center;
+  line-height: 27px;
+  text-decoration: none;
+  display: block;
+  width: 53px;
+  height: 69px;
+  padding: 10px;
+  border-top: 3px solid #414141;
+  color: #414141;
+  background: transparent;
+  -webkit-transition: width 1.2s ease-out;
+  -moz-transition: width 1.2s ease-out;
+  -o-transition: width 1.2s ease-out;
+  transition: width 1.2s ease-out;
+}
+
+/* line 48, ../../src/css/_navigation.scss */
+.logo h1 a:hover {
+  background: #414141;
+  color: white;
+}
+
+/* line 52, ../../src/css/_navigation.scss */
+.logo h1 a.active {
+  background: #414141;
+  color: white;
+  border-left: 1px solid #414141;
+  padding-left: 9px;
+  -webkit-transition: width 1s ease-out;
+  -moz-transition: width 1s ease-out;
+  -o-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+}
+
+/* line 62, ../../src/css/_navigation.scss */
+.logo h1 a span {
+  font-size: 0px;
+  float: left;
+  display: block;
+  height: 27px;
+  -webkit-transition: font 2s;
+  -moz-transition: font 2s;
+  -o-transition: font 2s;
+  transition: font 2s;
+}
+
+/* line 72, ../../src/css/_navigation.scss */
+.logo h1 a span:first-letter {
+  font-size: 27px;
+}
+
+/* line 75, ../../src/css/_navigation.scss */
+.logo h1 a span::first-letter {
+  font-size: 27px;
+}
+
+/* line 78, ../../src/css/_navigation.scss */
+.logo h1 a span.first-name {
+  width: 10px;
+}
+
+/* line 81, ../../src/css/_navigation.scss */
+.logo h1 a span.last-name {
+  width: 23px;
+}
+
+/* line 84, ../../src/css/_navigation.scss */
+.logo h1 a span.glyphicon {
+  font-size: 18px;
+  height: 18px;
+  float: none;
+  display: inline;
+}
+
+/* line 91, ../../src/css/_navigation.scss */
+.logo h1 a.active-wide {
+  background: #414141;
+  color: white;
+  width: 230px;
+  border-left: 1px solid #414141;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+/* line 101, ../../src/css/_navigation.scss */
+.logo h1 a.active:hover, .logo h1 a.active-wide:hover {
+  color: #414141;
+  background: white;
+}
+
+/* line 105, ../../src/css/_navigation.scss */
+.logo h1 a.active-wide span {
+  font-size: 27px;
+  float: none;
+  width: auto;
+  display: inline;
+}
+
+/* line 111, ../../src/css/_navigation.scss */
+.logo h1 a.active-wide span.glyphicon {
+  font-size: 18px;
+}
+
+/* line 115, ../../src/css/_navigation.scss */
+.navigation-nav {
+  border-bottom: 1px solid #414141;
+  border-left: 1px solid #414141;
+}
+
+/* line 120, ../../src/css/_navigation.scss */
+.navigation-nav li {
+  line-height: 1em;
+}
+
+/* line 124, ../../src/css/_navigation.scss */
+.navigation-nav li a {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 45px;
+  color: white;
+  text-transform: uppercase;
+  text-indent: 5px;
+  letter-spacing: 1px;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 0;
+  background: #414141;
+}
+
+/* line 137, ../../src/css/_navigation.scss */
+.navigation-nav li a:hover, .navigation-nav li a:focus {
+  color: #414141;
+  background: white;
+}
+
+/* line 141, ../../src/css/_navigation.scss */
+.navigation-nav li a span.glyphicon {
+  font-size: 28px;
+  width: 51px;
+  line-height: 40px;
+  text-align: center;
+  float: left;
+  text-indent: 0;
+}
+
+/* line 1, ../../src/css/_page-about.scss */
+.about-text p:first-child:first-letter {
+  /* for IE8 and below. one colon instead of two */
+  vertical-align: middle;
+  display: block;
+  float: left;
+  margin: 6px 16px -3px 0;
+  font-size: 400%;
+  line-height: 100%;
+}
+
+/* line 10, ../../src/css/_page-about.scss */
+.about-text p:first-child::first-letter {
+  vertical-align: middle;
+  display: block;
+  float: left;
+  margin: 6px 16px -3px 0;
+  font-size: 400%;
+  line-height: 100%;
+}
+
+/* PROGRESS BAR */
+/* line 21, ../../src/css/_page-about.scss */
+.progress {
+  height: 30px;
+  position: relative;
+  background: #f9f9f9 url('../../images/stripe.png?1390600082');
+  margin-bottom: 18px;
+  -webkit-background-size: 4px 4px;
+  -moz-background-size: 4px 4px;
+  background-size: 4px 4px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 33, ../../src/css/_page-about.scss */
+.progress-bar {
+  position: absolute;
+  left: -650px;
+  z-index: 1;
+  transition: left ease 1s;
+}
+
+/* line 40, ../../src/css/_page-about.scss */
+.progress-bar.active {
+  left: 0px;
+  transition-duration: 1s;
+}
+
+/* line 45, ../../src/css/_page-about.scss */
+.progress-bar-norris {
+  background-color: #428bca;
+}
+
+/* line 49, ../../src/css/_page-about.scss */
+.progress-bar-label {
+  position: absolute;
+  left: 20px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 30px;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: color ease 1.5s;
+}
+
+/* line 58, ../../src/css/_page-about.scss */
+.progress-bar-label.active {
+  color: white;
+  transition-duration: 1.5s;
+}
+
+/* line 1, ../../src/css/_page-credits.scss */
+.credits-list {
+  text-align: center;
+}
+
+/* line 1, ../../src/css/_page-skills.scss */
+.skill-box {
+  width: 75%;
+  padding: 20px 0 10px;
+  margin: 0 auto;
+  border-top: 1px dotted #414141;
+  -webkit-transition: all 1.5s ease-out;
+  -moz-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+}
+
+/* line 11, ../../src/css/_page-skills.scss */
+.skill-box.skill-box-first {
+  border-top: none;
+}
+
+@media (min-width: 768px) {
+  /* line 15, ../../src/css/_page-skills.scss */
+  .skill-box.skill-box-top {
+    border-top: none;
+  }
+}
+/* line 19, ../../src/css/_page-skills.scss */
+.skill-box p {
+  text-align: center;
+}
+
+/* line 22, ../../src/css/_page-skills.scss */
+.skill-title {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* line 27, ../../src/css/_page-skills.scss */
+.skill-box .glyphicon {
+  font-size: 20px;
+}
+
+/* line 1, ../../src/css/_page-work.scss */
+.work-slideshow {
+  display: none;
+  overflow: hidden;
+}
+
+/* line 6, ../../src/css/_page-work.scss */
+.carousel {
+  margin-bottom: 40px;
+}
+
+/* line 9, ../../src/css/_page-work.scss */
+.carousel-inner {
+  border-bottom: 2px solid #aaa;
+}
+
+/* line 12, ../../src/css/_page-work.scss */
+.carousel-inner .item {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+/* line 17, ../../src/css/_page-work.scss */
+.slideshow-controls-outer {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #aaa;
+}
+
+/* line 24, ../../src/css/_page-work.scss */
+.slideshow-controls {
+  position: absolute;
+  text-transform: uppercase;
+  color: #888;
+  font-size: 18px;
+  line-height: 80px;
+  letter-spacing: 2px;
+}
+
+/* line 32, ../../src/css/_page-work.scss */
+.slideshow-controls:hover {
+  color: #414141;
+}
+
+/* line 35, ../../src/css/_page-work.scss */
+.slideshow-controls-left {
+  left: 0;
+}
+
+/* line 38, ../../src/css/_page-work.scss */
+.slideshow-controls-close {
+  left: 49%;
+}
+
+/* line 41, ../../src/css/_page-work.scss */
+.slideshow-controls-right {
+  right: 0;
+}
+
+/* line 45, ../../src/css/_page-work.scss */
+.portfolio-image {
+  width: 290px;
+  height: 159px;
+  border: 2px solid black;
+  background-position: center top;
+  margin: 20px 0;
+}
+
+/* line 52, ../../src/css/_page-work.scss */
+.portfolio-image-1 {
+  background-image: url('../../images/work/gregg-orr-xs.jpg?1390600084');
+}
+
+/* line 55, ../../src/css/_page-work.scss */
+.portfolio-image-2 {
+  background-image: url('../../images/work/sewell-xs.jpg?1390600085');
+}
+
+/* line 58, ../../src/css/_page-work.scss */
+.portfolio-image-3 {
+  background-image: url('../../images/work/lone-star-xs.jpg?1390600084');
+}
+
+/* line 61, ../../src/css/_page-work.scss */
+.portfolio-image-4 {
+  background-image: url('../../images/work/auto-depot-xs.jpg?1390600084');
+}
+
+/* line 64, ../../src/css/_page-work.scss */
+.portfolio-content {
+  margin: 20px 0;
+}
+
+/* line 67, ../../src/css/_page-work.scss */
+.portfolio-content h4 a:hover {
+  color: #888;
+}
+
+/* line 70, ../../src/css/_page-work.scss */
+.portfolio-content ul {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* line 76, ../../src/css/_page-work.scss */
+.portfolio-content ul li {
+  position: relative;
+  line-height: 1.6;
+  padding-left: 30px;
+  margin-bottom: 6px;
+  margin-left: 0;
+}
+
+/* line 83, ../../src/css/_page-work.scss */
+.portfolio-content ul li .glyphicon {
+  font-size: 14px;
+  margin-right: 10px;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+
+/* line 90, ../../src/css/_page-work.scss */
+.portfolio-content ul li .client-label {
+  display: inline-block;
+  width: 85px;
+}
+
+/* line 95, ../../src/css/_page-work.scss */
+.work-site-list {
+  margin-bottom: 20px;
+}
+
+/* line 98, ../../src/css/_page-work.scss */
+.work-img {
+  position: relative;
+  display: block;
+  width: 290px;
+  height: 159px;
+  margin: 0 auto 20px;
+  border: 2px solid black;
+  background-position: center top;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+/* line 113, ../../src/css/_page-work.scss */
+.work-img:hover, .work-img:active {
+  z-index: 20;
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -moz-transform: scale(1.2);
+  /* Firefox */
+  -webkit-transform: scale(1.2);
+  /* Safari and Chrome */
+  -o-transform: scale(1.2);
+  /* Opera */
+  transform: scale(1.2);
+}
+
+/* line 121, ../../src/css/_page-work.scss */
+.work-img-1 {
+  background-image: url('../../images/work/gregg-orr-xs.jpg?1390600084');
+}
+
+/* line 124, ../../src/css/_page-work.scss */
+.work-img-2 {
+  background-image: url('../../images/work/sewell-xs.jpg?1390600085');
+}
+
+/* line 127, ../../src/css/_page-work.scss */
+.work-img-3 {
+  background-image: url('../../images/work/lone-star-xs.jpg?1390600084');
+}
+
+/* line 130, ../../src/css/_page-work.scss */
+.work-img-4 {
+  background-image: url('../../images/work/auto-depot-xs.jpg?1390600084');
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* line 134, ../../src/css/_page-work.scss */
+  .portfolio-image {
+    -webkit-background-size: 290px 159px;
+    -moz-background-size: 290px 159px;
+    background-size: 290px 159px;
+  }
+
+  /* line 139, ../../src/css/_page-work.scss */
+  .portfolio-image-1 {
+    background-image: url('../../images/work/gregg-orr-sm.jpg?1390600084');
+  }
+
+  /* line 142, ../../src/css/_page-work.scss */
+  .portfolio-image-2 {
+    background-image: url('../../images/work/sewell-sm.jpg?1390600085');
+  }
+
+  /* line 145, ../../src/css/_page-work.scss */
+  .portfolio-image-3 {
+    background-image: url('../../images/work/lone-star-sm.jpg?1390600084');
+  }
+
+  /* line 148, ../../src/css/_page-work.scss */
+  .portfolio-image-4 {
+    background-image: url('../../images/work/auto-depot-sm.jpg?1390600084');
+  }
+
+  /* line 151, ../../src/css/_page-work.scss */
+  .work-img {
+    -webkit-background-size: 290px 159px;
+    -moz-background-size: 290px 159px;
+    background-size: 290px 159px;
+  }
+
+  /* line 156, ../../src/css/_page-work.scss */
+  .work-img-1 {
+    background-image: url('../../images/work/gregg-orr-sm.jpg?1390600084');
+  }
+
+  /* line 159, ../../src/css/_page-work.scss */
+  .work-img-2 {
+    background-image: url('../../images/work/sewell-sm.jpg?1390600085');
+  }
+
+  /* line 162, ../../src/css/_page-work.scss */
+  .work-img-3 {
+    background-image: url('../../images/work/lone-star-sm.jpg?1390600084');
+  }
+
+  /* line 165, ../../src/css/_page-work.scss */
+  .work-img-4 {
+    background-image: url('../../images/work/auto-depot-sm.jpg?1390600084');
+  }
+
+  /* line 168, ../../src/css/_page-work.scss */
+  .ribbon {
+    background-image: url('../../images/line@2x.png?1390600071');
+    -webkit-background-size: 100px 28px;
+    -moz-background-size: 100px 28px;
+    background-size: 100px 28px;
+  }
+
+  /* line 174, ../../src/css/_page-work.scss */
+  .hr .inner {
+    background-image: url('../../images/line@2x.png?1390600071');
+  }
+}
+@media (min-width: 768px) {
+  /* line 179, ../../src/css/_page-work.scss */
+  .portfolio-image {
+    width: 630px;
+    height: 346px;
+    -webkit-background-size: 630px 346px;
+    -moz-background-size: 630px 346px;
+    background-size: 630px 346px;
+  }
+
+  /* line 187, ../../src/css/_page-work.scss */
+  .work-img {
+    width: 315px;
+    height: 173px;
+    -webkit-background-size: 315px 173px;
+    -moz-background-size: 315px 173px;
+    background-size: 315px 173px;
+  }
+
+  /* line 194, ../../src/css/_page-work.scss */
+  .carousel-inner .item .col-lg-4, .carousel-inner .item .col-lg-8 {
+    padding: 0;
+  }
+
+  /* line 197, ../../src/css/_page-work.scss */
+  .work-img-column .col-lg-4 {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 768px) and (min-resolution: 120dpi) {
+  /* line 202, ../../src/css/_page-work.scss */
+  .portfolio-image-1 {
+    background-image: url('../../images/work/gregg-orr-md.jpg?1390600084');
+  }
+
+  /* line 205, ../../src/css/_page-work.scss */
+  .portfolio-image-2 {
+    background-image: url('../../images/work/sewell-md.jpg?1390600085');
+  }
+
+  /* line 208, ../../src/css/_page-work.scss */
+  .portfolio-image-3 {
+    background-image: url('../../images/work/lone-star-md.jpg?1390600085');
+  }
+
+  /* line 211, ../../src/css/_page-work.scss */
+  .portfolio-image-4 {
+    background-image: url('../../images/work/auto-depot-md.jpg?1390600084');
+  }
+}
+/* line 1, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-top: 2px solid #888;
+  border-bottom: 2px solid #888;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 9, ../../src/css/_parallax-backgrounds.scss */
+  .parallax-window {
+    -webkit-background-size: 1199px 406px;
+    -moz-background-size: 1199px 406px;
+    background-size: 1199px 406px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  /* line 16, ../../src/css/_parallax-backgrounds.scss */
+  .parallax-window {
+    -webkit-background-size: 1440px 488px;
+    -moz-background-size: 1440px 488px;
+    background-size: 1440px 488px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1680px) {
+  /* line 23, ../../src/css/_parallax-backgrounds.scss */
+  .parallax-window {
+    -webkit-background-size: 1680px 569px;
+    -moz-background-size: 1680px 569px;
+    background-size: 1680px 569px;
+  }
+}
+/* line 30, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window-first {
+  height: 400px;
+  background-image: url('../../images/parallax/computer-internals.jpg?1390600067');
+}
+
+/* line 34, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window-second {
+  height: 400px;
+  background-image: url('../../images/parallax/box_robots.jpg?1390600067');
+  border-top: 2px solid #888;
+  border-bottom: 2px solid #888;
+}
+
+/* line 40, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window-third {
+  height: 400px;
+  background-image: url('../../images/parallax/thundercloud.jpg?1390797114');
+  border-top: 2px solid #888;
+  border-bottom: 2px solid #888;
+}
+
+/* line 46, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window article {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 69px;
+  color: white;
+  height: 258px;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+/* line 56, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window.parallax-window-first article {
+  position: static;
+  font-family: 'Sorts Mill Goudy', Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  height: 130px;
+}
+
+/* line 62, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window.parallax-window-first article span {
+  color: #428bca;
+  font-size: 16px;
+}
+
+/* line 66, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window.parallax-window-second article {
+  font-family: 'Sorts Mill Goudy', Georgia, 'Times New Roman', Times, serif;
+  color: #7d5b5b;
+  font-size: 32px;
+  font-style: italic;
+  width: 45%;
+  top: 19%;
+  right: 12%;
+}
+
+/* line 75, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window.parallax-window-third article {
+  color: #414141;
+  text-align: right;
+  width: 97%;
+  top: 48px;
+}
+
+/* line 81, ../../src/css/_parallax-backgrounds.scss */
+.parallax-window.parallax-window-third article span {
+  font-size: 60px;
+}
+
+/* line 84, ../../src/css/_parallax-backgrounds.scss */
+.article-outer-box {
+  width: 90%;
+  margin: 40px auto 0;
+  border: 1px solid #ccc;
+}
+
+/* line 89, ../../src/css/_parallax-backgrounds.scss */
+.article-middle-box {
+  width: 99%;
+  margin: .5%;
+  border: 1px solid #ccc;
+}
+
+/* line 94, ../../src/css/_parallax-backgrounds.scss */
+.article-inner-box {
+  width: 99.4%;
+  margin: .3%;
+  border: 1px solid #ccc;
+}
+
+/* line 99, ../../src/css/_parallax-backgrounds.scss */
+.article-decoration {
+  margin: 20px auto 30px;
+  width: 120px;
+  height: 73px;
+  background-image: url('../../images/article-decoration@2x.png?1378959472');
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* line 106, ../../src/css/_parallax-backgrounds.scss */
+  .article-decoration {
+    background-image: url('../../images/article-decoration@2x.png?1378959472');
+    -webkit-background-size: 120px 83px;
+    -moz-background-size: 120px 83px;
+    background-size: 120px 83px;
+  }
+}
+/* line 1, ../../src/css/_parallax-balloon.scss */
+.parallax-window-balloon-outer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 6, ../../src/css/_parallax-balloon.scss */
+.parallax-window-balloon {
+  height: 400px;
+  background: #e3e5e5;
+  z-index: 1000;
+}
+
+/* line 11, ../../src/css/_parallax-balloon.scss */
+.parallax-balloon-bg {
+  position: absolute;
+  top: 0;
+}
+
+/* foreground (clouds) */
+/* line 17, ../../src/css/_parallax-balloon.scss */
+#parallax-balloon-bg-a {
+  z-index: 4;
+}
+
+/* foreground (balloon) */
+/* line 23, ../../src/css/_parallax-balloon.scss */
+#parallax-balloon-bg-b {
+  z-index: 3;
+}
+
+/* midground (clouds) */
+/* line 28, ../../src/css/_parallax-balloon.scss */
+#parallax-balloon-bg-c {
+  z-index: 2;
+}
+
+/* background (clouds) */
+/* line 33, ../../src/css/_parallax-balloon.scss */
+#parallax-balloon-bg-d {
+  z-index: 1;
+}
+
+/* sprites */
+/* line 39, ../../src/css/_parallax-balloon.scss */
+.parallax-balloon-bg .sprites {
+  background-image: url('../../images/parallax/balloon-sprites-xs.png?1390600063');
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+}
+
+/* line 46, ../../src/css/_parallax-balloon.scss */
+.balloon {
+  width: 180px;
+  height: 258px;
+  background-position: left top;
+  top: 400px;
+  left: 115px;
+}
+
+/* line 54, ../../src/css/_parallax-balloon.scss */
+.cloud-lg {
+  width: 166px;
+  height: 45px;
+  background-position: left -258px;
+}
+
+/* line 59, ../../src/css/_parallax-balloon.scss */
+.cloud-md {
+  width: 107px;
+  height: 36px;
+  background-position: left -303px;
+}
+
+/* line 64, ../../src/css/_parallax-balloon.scss */
+.cloud-sm {
+  width: 55px;
+  height: 16px;
+  background-position: -107px -303px;
+}
+
+/* line 69, ../../src/css/_parallax-balloon.scss */
+.cloud-lg-a {
+  top: 118px;
+  left: 400px;
+}
+
+/* line 73, ../../src/css/_parallax-balloon.scss */
+.cloud-lg-b {
+  top: 305px;
+  left: 30px;
+}
+
+/* line 77, ../../src/css/_parallax-balloon.scss */
+.cloud-md-a {
+  top: 150px;
+  left: 236px;
+}
+
+/* line 81, ../../src/css/_parallax-balloon.scss */
+.cloud-md-b {
+  top: 265px;
+  left: 542px;
+}
+
+/* line 85, ../../src/css/_parallax-balloon.scss */
+.cloud-sm-a {
+  top: 129px;
+  left: 10px;
+}
+
+/* line 89, ../../src/css/_parallax-balloon.scss */
+.cloud-sm-b {
+  top: 331px;
+  left: 401px;
+}
+
+/* line 93, ../../src/css/_parallax-balloon.scss */
+.cloud-sm-c {
+  top: 300px;
+  left: 75px;
+}
+
+/* line 97, ../../src/css/_parallax-balloon.scss */
+.cloud-sm-d {
+  top: 26px;
+  left: 400px;
+}
+
+@media (min-width: 768px) {
+  /* line 103, ../../src/css/_parallax-balloon.scss */
+  .parallax-balloon-bg .sprites {
+    background-image: url('../../images/parallax/balloon-sprites.png?1390600072');
+  }
+
+  /* line 106, ../../src/css/_parallax-balloon.scss */
+  .balloon {
+    width: 529px;
+    height: 753px;
+    top: 100px;
+    left: 52%;
+  }
+
+  /* line 112, ../../src/css/_parallax-balloon.scss */
+  .cloud-lg {
+    width: 488px;
+    height: 138px;
+    background-position: left -757px;
+  }
+
+  /* line 117, ../../src/css/_parallax-balloon.scss */
+  .cloud-md {
+    width: 311px;
+    height: 105px;
+    background-position: left -895px;
+  }
+
+  /* line 122, ../../src/css/_parallax-balloon.scss */
+  .cloud-sm {
+    width: 160px;
+    height: 48px;
+    background-position: -311px -895px;
+  }
+
+  /* line 127, ../../src/css/_parallax-balloon.scss */
+  .cloud-lg-a {
+    top: 118px;
+    left: 76%;
+  }
+
+  /* line 131, ../../src/css/_parallax-balloon.scss */
+  .cloud-lg-b {
+    top: 343px;
+    left: 21%;
+  }
+
+  /* line 135, ../../src/css/_parallax-balloon.scss */
+  .cloud-md-a {
+    top: 150px;
+    left: -6%;
+  }
+
+  /* line 139, ../../src/css/_parallax-balloon.scss */
+  .cloud-md-b {
+    top: 65px;
+    left: 42%;
+  }
+
+  /* line 143, ../../src/css/_parallax-balloon.scss */
+  .cloud-sm-a {
+    top: 79px;
+    left: 12%;
+  }
+
+  /* line 147, ../../src/css/_parallax-balloon.scss */
+  .cloud-sm-b {
+    top: 331px;
+    left: 92%;
+  }
+
+  /* line 151, ../../src/css/_parallax-balloon.scss */
+  .cloud-sm-c {
+    top: 343px;
+    left: -8%;
+  }
+
+  /* line 155, ../../src/css/_parallax-balloon.scss */
+  .cloud-sm-d {
+    top: 26px;
+    left: 107%;
+  }
+}

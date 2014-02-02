@@ -1,0 +1,95 @@
+.page {
+	overflow: hidden;
+	position: relative;	
+}
+.main-content {
+	z-index: 100;
+}
+
+.header-sprite {
+	height: 109px;
+	background-image: image-url('header-sprites.jpg');
+	margin: 0 auto;
+}
+.about-sprite {
+	width: 160px;
+	background-position: 0px 0px;
+}
+.skills-sprite {
+	width: 150px;
+	background-position: -160px 0px;
+}
+.work-sprite {
+	width: 100px;
+	background-position: -310px 0px;
+}
+.credits-sprite {
+	width: 150px;
+	background-position: -411px 0px;
+	height: 156px;
+}
+.page-header {
+	background: image-url('page-header.png') center bottom no-repeat;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	border-bottom: none;
+}
+@media (min-width: 768px), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+	.page-header {
+		background-image: image-url('page-header@2x.png');
+		-webkit-background-size: 600px 14px;
+		-moz-background-size: 600px 14px;
+		background-size: 600px 14px;
+	}
+}
+
+.ribbon-row {
+	clear: both;
+}
+.ribbon {
+	background-image: image-url('line.png');
+	width: 100px;
+	height: 28px;
+	margin: 0 auto;
+}
+.ribbon-outer {
+position: relative;
+height: 28px;
+margin: 20px 0;
+clear: both;
+}
+.ribbon-outer .ribbon {
+background-color: white;
+z-index: 20;
+position: relative;
+padding: 0 10px;
+box-sizing: content-box;
+-moz-box-sizing: content-box;
+-webkit-box-sizing: content-box;
+background-repeat: no-repeat;
+background-position: 10px 0px;
+}
+.ribbon-outer .hr {
+position: absolute;
+top: 50%;
+width: 100%;
+border-top: 1px solid #777;
+content: "";
+z-index: 10;
+}
+
+.turtle {
+	background-image: image-url('turtle.png');
+	position: absolute;
+	top: 3000px;
+	width: 49px;
+	height: 80px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+	.turtle {
+		background-image: image-url('turtle@2x.png');
+		-webkit-background-size: 49px 80px;
+		-moz-background-size: 49px 80px;
+		background-size: 49px 80px;
+	}
+}

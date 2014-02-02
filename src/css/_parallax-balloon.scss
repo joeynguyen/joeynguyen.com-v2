@@ -1,0 +1,159 @@
+.parallax-window-balloon-outer {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.parallax-window-balloon {
+	height: 400px;
+	background: #e3e5e5;
+	z-index: 1000;
+}
+.parallax-balloon-bg {
+	position: absolute;
+	top: 0;
+}
+
+/* foreground (clouds) */
+#parallax-balloon-bg-a {
+	z-index: 4;
+
+	}
+
+/* foreground (balloon) */
+#parallax-balloon-bg-b {
+	z-index: 3;
+}
+
+/* midground (clouds) */
+#parallax-balloon-bg-c {
+	z-index: 2;
+}
+
+/* background (clouds) */
+#parallax-balloon-bg-d {
+	z-index: 1;
+}
+
+
+/* sprites */
+.parallax-balloon-bg .sprites {
+	background-image: image-url('parallax/balloon-sprites-xs.png');
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+}
+
+.balloon {
+	width: 180px;
+	height: 258px;
+	background-position: left top;
+	top: 400px;
+	left: 115px;
+}
+
+.cloud-lg {
+	width: 166px;
+	height: 45px;
+	background-position: left -258px;
+}
+.cloud-md {
+	width: 107px;
+	height: 36px;
+	background-position: left -303px;
+}
+.cloud-sm {
+	width: 55px;
+	height: 16px;
+	background-position: -107px -303px;
+}
+.cloud-lg-a {
+	top: 118px;
+	left: 400px;		
+}
+.cloud-lg-b {
+	top: 305px;
+	left: 30px;
+}
+.cloud-md-a {
+	top: 150px;
+	left: 236px;
+}
+.cloud-md-b {
+	top: 265px;
+	left: 542px;
+}
+.cloud-sm-a {
+	top: 129px;
+	left: 10px;
+}
+.cloud-sm-b {
+	top: 331px;
+	left: 401px;
+}
+.cloud-sm-c {
+	top: 300px;
+	left: 75px;
+}
+.cloud-sm-d {
+	top: 26px;
+	left: 400px;
+}
+
+@media (min-width: 768px) {
+	.parallax-balloon-bg .sprites {
+		background-image: image-url('parallax/balloon-sprites.png');
+	}
+	.balloon {
+		width: 529px;
+		height: 753px;
+		top: 100px;
+		left: 52%;
+	}
+	.cloud-lg {
+		width: 488px;
+		height: 138px;
+		background-position: left -757px;
+	}
+	.cloud-md {
+		width: 311px;
+		height: 105px;
+		background-position: left -895px;
+	}
+	.cloud-sm {
+		width: 160px;
+		height: 48px;
+		background-position: -311px -895px;
+	}
+	.cloud-lg-a {
+		top: 118px;
+		left: 76%;		
+	}
+	.cloud-lg-b {
+		top: 343px;
+		left: 21%;
+	}
+	.cloud-md-a {
+		top: 150px;
+		left: -6%;
+	}
+	.cloud-md-b {
+		top: 65px;
+		left: 42%;
+	}
+	.cloud-sm-a {
+		top: 79px;
+		left: 12%;
+	}
+	.cloud-sm-b {
+		top: 331px;
+		left: 92%;
+	}
+	.cloud-sm-c {
+		top: 343px;
+		left: -8%;
+	}
+	.cloud-sm-d {
+		top: 26px;
+		left: 107%;
+	}
+}

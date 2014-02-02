@@ -1,0 +1,20 @@
+{
+  "name": "joeynguyen-v2",
+  "version": "0.0.0",
+  "description": "joeynguyen-v2 site grunt build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joey Nguyen",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-imagemin": "~0.3.0",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-jshint": "~0.8.0"
+  }
+}

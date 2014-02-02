@@ -1,0 +1,61 @@
+.about-text p:first-child:first-letter { /* for IE8 and below. one colon instead of two */
+	vertical-align: middle;
+	display: block;
+	float: left;
+	margin: 6px 16px -3px 0;
+	font-size: 400%;
+	line-height: 100%;
+}
+
+.about-text p:first-child::first-letter {
+	vertical-align: middle;
+	display: block;
+	float: left;
+	margin: 6px 16px -3px 0;
+	font-size: 400%;
+	line-height: 100%;
+}
+
+/* PROGRESS BAR */
+
+.progress {
+	height: 30px;
+	position: relative;
+	background: #f9f9f9 image-url('stripe.png');
+	margin-bottom: 18px;
+	-webkit-background-size: 4px 4px;
+	-moz-background-size: 4px 4px;
+	background-size: 4px 4px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.progress-bar {
+	position: absolute;
+	left: -650px;
+	z-index: 1;
+	transition: left ease 1s;
+}
+
+.progress-bar.active  {
+	left: 0px;
+	transition-duration: 1s;
+}
+
+.progress-bar-norris {
+	background-color: #428bca;
+}
+
+.progress-bar-label {
+	position: absolute;
+	left: 20px;
+	font-family: 'Oswald', sans-serif;
+	line-height: 30px;
+	text-transform: uppercase;
+	z-index: 1;
+	transition: color ease 1.5s;
+}
+.progress-bar-label.active {
+	color: white;
+	transition-duration: 1.5s;
+}

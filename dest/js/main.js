@@ -1,6 +1,18 @@
+Modernizr.load([ // Presentational polyfills
+{
+    // Logical list of things we would normally need
+    test: Modernizr.touch,
+    // Modernizr.load loads css and javascript by default
+    nope: "js/jquery.stellar.min.js",
+    complete: function() {
+        // Run this after everything in this group has downloaded
+        // and executed, as well everything in all previous groups
+        // Enable Parallax
+        $.stellar({});
+    }
+} ]);
+
 $(document).ready(function() {
-    // Enable Parallax
-    $.stellar({});
     // // Fly Turtle Fly!
     $turtle = $("#turtle");
     function moveTurtle() {
@@ -61,7 +73,7 @@ $(document).ready(function() {
         $carouselItem = $(this).attr("title");
         $carouselInner = $("#carousel-inner");
         if (isEmpty($carouselInner)) {
-            $carouselInner.load("file:///Users/giaonguyen/Dropbox/Coding/joeynguyen.com-Bootstrap-Norris-theme/FINAL/work.html");
+            $carouselInner.load("work.html");
             $(document).ajaxSuccess(function() {
                 $("#" + $carouselItem).addClass("active");
                 $workSlideshow.slideDown(1200);

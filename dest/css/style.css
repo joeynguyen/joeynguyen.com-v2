@@ -79,7 +79,7 @@ h4 {
 /* line 9, ../../src/css/_layout.scss */
 .header-sprite {
   height: 109px;
-  background-image: url('../../images/header-sprites.jpg?1390804430');
+  background-image: url('../../images/header-sprites.jpg?1391489149');
   margin: 0 auto;
 }
 
@@ -110,7 +110,7 @@ h4 {
 
 /* line 31, ../../src/css/_layout.scss */
 .page-header {
-  background: url('../../images/page-header.png?1390600082') center bottom no-repeat;
+  background: url('../../images/page-header.png?1391489149') center bottom no-repeat;
   padding-bottom: 20px;
   margin-bottom: 30px;
   border-bottom: none;
@@ -119,7 +119,7 @@ h4 {
 @media (min-width: 768px), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* line 38, ../../src/css/_layout.scss */
   .page-header {
-    background-image: url('../../images/page-header@2x.png?1390600082');
+    background-image: url('../../images/page-header@2x.png?1391489150');
     -webkit-background-size: 600px 14px;
     -moz-background-size: 600px 14px;
     background-size: 600px 14px;
@@ -132,7 +132,7 @@ h4 {
 
 /* line 49, ../../src/css/_layout.scss */
 .ribbon {
-  background-image: url('../../images/line.png?1390600071');
+  background-image: url('../../images/line.png?1391489149');
   width: 100px;
   height: 28px;
   margin: 0 auto;
@@ -171,7 +171,7 @@ h4 {
 
 /* line 81, ../../src/css/_layout.scss */
 .turtle {
-  background-image: url('../../images/turtle.png?1390600083');
+  background-image: url('../../images/turtle.png?1391489151');
   position: absolute;
   top: 3000px;
   width: 49px;
@@ -181,7 +181,7 @@ h4 {
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* line 89, ../../src/css/_layout.scss */
   .turtle {
-    background-image: url('../../images/turtle@2x.png?1390600083');
+    background-image: url('../../images/turtle@2x.png?1391489151');
     -webkit-background-size: 49px 80px;
     -moz-background-size: 49px 80px;
     background-size: 49px 80px;
@@ -247,7 +247,7 @@ header {
 }
 
 /* line 48, ../../src/css/_navigation.scss */
-.logo h1 a:hover {
+.logo h1 a:hover, .logo h1 a:active {
   background: #414141;
   color: white;
 }
@@ -317,7 +317,7 @@ header {
 }
 
 /* line 101, ../../src/css/_navigation.scss */
-.logo h1 a.active:hover, .logo h1 a.active-wide:hover {
+.logo h1 a.active:hover, .logo h1 a.active-wide:hover, .logo h1 a.active:active, .logo h1 a.active-wide:active {
   color: #414141;
   background: white;
 }
@@ -403,7 +403,7 @@ header {
 .progress {
   height: 30px;
   position: relative;
-  background: #f9f9f9 url('../../images/stripe.png?1390600082');
+  background: #f9f9f9 url('../../images/stripe.png?1391489150');
   margin-bottom: 18px;
   -webkit-background-size: 4px 4px;
   -moz-background-size: 4px 4px;
@@ -566,22 +566,22 @@ header {
 
 /* line 52, ../../src/css/_page-work.scss */
 .portfolio-image-1 {
-  background-image: url('../../images/work/gregg-orr-xs.jpg?1390600084');
+  background-image: url('../../images/work/gregg-orr-xs.jpg?1391489152');
 }
 
 /* line 55, ../../src/css/_page-work.scss */
 .portfolio-image-2 {
-  background-image: url('../../images/work/sewell-xs.jpg?1390600085');
+  background-image: url('../../images/work/sewell-xs.jpg?1391489152');
 }
 
 /* line 58, ../../src/css/_page-work.scss */
 .portfolio-image-3 {
-  background-image: url('../../images/work/lone-star-xs.jpg?1390600084');
+  background-image: url('../../images/work/lone-star-xs.jpg?1391489152');
 }
 
 /* line 61, ../../src/css/_page-work.scss */
 .portfolio-image-4 {
-  background-image: url('../../images/work/auto-depot-xs.jpg?1390600084');
+  background-image: url('../../images/work/auto-depot-xs.jpg?1391489151');
 }
 
 /* line 64, ../../src/css/_page-work.scss */
@@ -664,22 +664,22 @@ header {
 
 /* line 121, ../../src/css/_page-work.scss */
 .work-img-1 {
-  background-image: url('../../images/work/gregg-orr-xs.jpg?1390600084');
+  background-image: url('../../images/work/gregg-orr-xs.jpg?1391489152');
 }
 
 /* line 124, ../../src/css/_page-work.scss */
 .work-img-2 {
-  background-image: url('../../images/work/sewell-xs.jpg?1390600085');
+  background-image: url('../../images/work/sewell-xs.jpg?1391489152');
 }
 
 /* line 127, ../../src/css/_page-work.scss */
 .work-img-3 {
-  background-image: url('../../images/work/lone-star-xs.jpg?1390600084');
+  background-image: url('../../images/work/lone-star-xs.jpg?1391489152');
 }
 
 /* line 130, ../../src/css/_page-work.scss */
 .work-img-4 {
-  background-image: url('../../images/work/auto-depot-xs.jpg?1390600084');
+  background-image: url('../../images/work/auto-depot-xs.jpg?1391489151');
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
@@ -692,22 +692,22 @@ header {
 
   /* line 139, ../../src/css/_page-work.scss */
   .portfolio-image-1 {
-    background-image: url('../../images/work/gregg-orr-sm.jpg?1390600084');
+    background-image: url('../../images/work/gregg-orr-sm.jpg?1391489152');
   }
 
   /* line 142, ../../src/css/_page-work.scss */
   .portfolio-image-2 {
-    background-image: url('../../images/work/sewell-sm.jpg?1390600085');
+    background-image: url('../../images/work/sewell-sm.jpg?1391489152');
   }
 
   /* line 145, ../../src/css/_page-work.scss */
   .portfolio-image-3 {
-    background-image: url('../../images/work/lone-star-sm.jpg?1390600084');
+    background-image: url('../../images/work/lone-star-sm.jpg?1391489152');
   }
 
   /* line 148, ../../src/css/_page-work.scss */
   .portfolio-image-4 {
-    background-image: url('../../images/work/auto-depot-sm.jpg?1390600084');
+    background-image: url('../../images/work/auto-depot-sm.jpg?1391489151');
   }
 
   /* line 151, ../../src/css/_page-work.scss */
@@ -719,27 +719,27 @@ header {
 
   /* line 156, ../../src/css/_page-work.scss */
   .work-img-1 {
-    background-image: url('../../images/work/gregg-orr-sm.jpg?1390600084');
+    background-image: url('../../images/work/gregg-orr-sm.jpg?1391489152');
   }
 
   /* line 159, ../../src/css/_page-work.scss */
   .work-img-2 {
-    background-image: url('../../images/work/sewell-sm.jpg?1390600085');
+    background-image: url('../../images/work/sewell-sm.jpg?1391489152');
   }
 
   /* line 162, ../../src/css/_page-work.scss */
   .work-img-3 {
-    background-image: url('../../images/work/lone-star-sm.jpg?1390600084');
+    background-image: url('../../images/work/lone-star-sm.jpg?1391489152');
   }
 
   /* line 165, ../../src/css/_page-work.scss */
   .work-img-4 {
-    background-image: url('../../images/work/auto-depot-sm.jpg?1390600084');
+    background-image: url('../../images/work/auto-depot-sm.jpg?1391489151');
   }
 
   /* line 168, ../../src/css/_page-work.scss */
   .ribbon {
-    background-image: url('../../images/line@2x.png?1390600071');
+    background-image: url('../../images/line@2x.png?1391489150');
     -webkit-background-size: 100px 28px;
     -moz-background-size: 100px 28px;
     background-size: 100px 28px;
@@ -747,7 +747,7 @@ header {
 
   /* line 174, ../../src/css/_page-work.scss */
   .hr .inner {
-    background-image: url('../../images/line@2x.png?1390600071');
+    background-image: url('../../images/line@2x.png?1391489150');
   }
 }
 @media (min-width: 768px) {
@@ -782,22 +782,22 @@ header {
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 768px) and (min-resolution: 120dpi) {
   /* line 202, ../../src/css/_page-work.scss */
   .portfolio-image-1 {
-    background-image: url('../../images/work/gregg-orr-md.jpg?1390600084');
+    background-image: url('../../images/work/gregg-orr-md.jpg?1391489152');
   }
 
   /* line 205, ../../src/css/_page-work.scss */
   .portfolio-image-2 {
-    background-image: url('../../images/work/sewell-md.jpg?1390600085');
+    background-image: url('../../images/work/sewell-md.jpg?1391489152');
   }
 
   /* line 208, ../../src/css/_page-work.scss */
   .portfolio-image-3 {
-    background-image: url('../../images/work/lone-star-md.jpg?1390600085');
+    background-image: url('../../images/work/lone-star-md.jpg?1391489152');
   }
 
   /* line 211, ../../src/css/_page-work.scss */
   .portfolio-image-4 {
-    background-image: url('../../images/work/auto-depot-md.jpg?1390600084');
+    background-image: url('../../images/work/auto-depot-md.jpg?1391489151');
   }
 }
 /* line 1, ../../src/css/_parallax-backgrounds.scss */
@@ -812,37 +812,37 @@ header {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 9, ../../src/css/_parallax-backgrounds.scss */
   .parallax-window {
-    -webkit-background-size: 1199px 406px;
-    -moz-background-size: 1199px 406px;
-    background-size: 1199px 406px;
+    -webkit-background-size: 1199px 500px;
+    -moz-background-size: 1199px 500px;
+    background-size: 1199px 500px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
   /* line 16, ../../src/css/_parallax-backgrounds.scss */
   .parallax-window {
-    -webkit-background-size: 1440px 488px;
-    -moz-background-size: 1440px 488px;
-    background-size: 1440px 488px;
+    -webkit-background-size: 1440px 600px;
+    -moz-background-size: 1440px 600px;
+    background-size: 1440px 600px;
   }
 }
-@media (min-width: 1440px) and (max-width: 1680px) {
+@media (min-width: 1441px) and (max-width: 1680px) {
   /* line 23, ../../src/css/_parallax-backgrounds.scss */
   .parallax-window {
-    -webkit-background-size: 1680px 569px;
-    -moz-background-size: 1680px 569px;
-    background-size: 1680px 569px;
+    -webkit-background-size: 1680px 700px;
+    -moz-background-size: 1680px 700px;
+    background-size: 1680px 700px;
   }
 }
 /* line 30, ../../src/css/_parallax-backgrounds.scss */
 .parallax-window-first {
   height: 400px;
-  background-image: url('../../images/parallax/computer-internals.jpg?1390600067');
+  background-image: url('../../images/parallax/computer-internals.jpg?1391577040');
 }
 
 /* line 34, ../../src/css/_parallax-backgrounds.scss */
 .parallax-window-second {
   height: 400px;
-  background-image: url('../../images/parallax/box_robots.jpg?1390600067');
+  background-image: url('../../images/parallax/box-robots.jpg?1391576968');
   border-top: 2px solid #888;
   border-bottom: 2px solid #888;
 }
@@ -850,7 +850,7 @@ header {
 /* line 40, ../../src/css/_parallax-backgrounds.scss */
 .parallax-window-third {
   height: 400px;
-  background-image: url('../../images/parallax/thundercloud.jpg?1390797114');
+  background-image: url('../../images/parallax/thundercloud.jpg?1391576773');
   border-top: 2px solid #888;
   border-bottom: 2px solid #888;
 }
@@ -931,13 +931,13 @@ header {
   margin: 20px auto 30px;
   width: 120px;
   height: 73px;
-  background-image: url('../../images/article-decoration@2x.png?1378959472');
+  background-image: url('../../images/article-decoration@2x.png?1391489149');
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* line 106, ../../src/css/_parallax-backgrounds.scss */
   .article-decoration {
-    background-image: url('../../images/article-decoration@2x.png?1378959472');
+    background-image: url('../../images/article-decoration@2x.png?1391489149');
     -webkit-background-size: 120px 83px;
     -moz-background-size: 120px 83px;
     background-size: 120px 83px;
@@ -990,7 +990,7 @@ header {
 /* sprites */
 /* line 39, ../../src/css/_parallax-balloon.scss */
 .parallax-balloon-bg .sprites {
-  background-image: url('../../images/parallax/balloon-sprites-xs.png?1390600063');
+  background-image: url('../../images/parallax/balloon-sprites-xs.png?1391489152');
   background-repeat: no-repeat;
   display: block;
   position: absolute;
@@ -1051,36 +1051,48 @@ header {
 }
 
 /* line 85, ../../src/css/_parallax-balloon.scss */
+.cloud-md-c {
+  top: 250px;
+  left: 1375px;
+}
+
+/* line 89, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-a {
   top: 129px;
   left: 10px;
 }
 
-/* line 89, ../../src/css/_parallax-balloon.scss */
+/* line 93, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-b {
   top: 331px;
   left: 401px;
 }
 
-/* line 93, ../../src/css/_parallax-balloon.scss */
+/* line 97, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-c {
   top: 300px;
   left: 75px;
 }
 
-/* line 97, ../../src/css/_parallax-balloon.scss */
+/* line 101, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-d {
   top: 26px;
   left: 400px;
 }
 
+/* line 105, ../../src/css/_parallax-balloon.scss */
+.cloud-sm-e {
+  top: 100px;
+  left: 1575px;
+}
+
 @media (min-width: 768px) {
-  /* line 103, ../../src/css/_parallax-balloon.scss */
+  /* line 111, ../../src/css/_parallax-balloon.scss */
   .parallax-balloon-bg .sprites {
-    background-image: url('../../images/parallax/balloon-sprites.png?1390600072');
+    background-image: url('../../images/parallax/balloon-sprites.png?1391489160');
   }
 
-  /* line 106, ../../src/css/_parallax-balloon.scss */
+  /* line 114, ../../src/css/_parallax-balloon.scss */
   .balloon {
     width: 529px;
     height: 753px;
@@ -1088,70 +1100,70 @@ header {
     left: 52%;
   }
 
-  /* line 112, ../../src/css/_parallax-balloon.scss */
+  /* line 120, ../../src/css/_parallax-balloon.scss */
   .cloud-lg {
     width: 488px;
     height: 138px;
     background-position: left -757px;
   }
 
-  /* line 117, ../../src/css/_parallax-balloon.scss */
+  /* line 125, ../../src/css/_parallax-balloon.scss */
   .cloud-md {
     width: 311px;
     height: 105px;
     background-position: left -895px;
   }
 
-  /* line 122, ../../src/css/_parallax-balloon.scss */
+  /* line 130, ../../src/css/_parallax-balloon.scss */
   .cloud-sm {
     width: 160px;
     height: 48px;
     background-position: -311px -895px;
   }
 
-  /* line 127, ../../src/css/_parallax-balloon.scss */
+  /* line 135, ../../src/css/_parallax-balloon.scss */
   .cloud-lg-a {
     top: 118px;
     left: 76%;
   }
 
-  /* line 131, ../../src/css/_parallax-balloon.scss */
+  /* line 139, ../../src/css/_parallax-balloon.scss */
   .cloud-lg-b {
     top: 343px;
     left: 21%;
   }
 
-  /* line 135, ../../src/css/_parallax-balloon.scss */
+  /* line 143, ../../src/css/_parallax-balloon.scss */
   .cloud-md-a {
     top: 150px;
     left: -6%;
   }
 
-  /* line 139, ../../src/css/_parallax-balloon.scss */
+  /* line 147, ../../src/css/_parallax-balloon.scss */
   .cloud-md-b {
     top: 65px;
     left: 42%;
   }
 
-  /* line 143, ../../src/css/_parallax-balloon.scss */
+  /* line 151, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-a {
     top: 79px;
     left: 12%;
   }
 
-  /* line 147, ../../src/css/_parallax-balloon.scss */
+  /* line 155, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-b {
     top: 331px;
     left: 92%;
   }
 
-  /* line 151, ../../src/css/_parallax-balloon.scss */
+  /* line 159, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-c {
     top: 343px;
     left: -8%;
   }
 
-  /* line 155, ../../src/css/_parallax-balloon.scss */
+  /* line 163, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-d {
     top: 26px;
     left: 107%;

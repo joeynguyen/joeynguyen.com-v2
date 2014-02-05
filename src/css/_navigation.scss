@@ -45,7 +45,7 @@
     transition: width 1.2s ease-out;
 
 }
-.logo h1 a:hover {
+.logo h1 a:hover, .logo h1 a:active {
 	background: #414141;
 	color: white;
 }
@@ -98,7 +98,7 @@
 	-o-transition: none;
 	transition: none;
 }
-.logo h1 a.active:hover, .logo h1 a.active-wide:hover {
+.logo h1 a.active:hover, .logo h1 a.active-wide:hover, .logo h1 a.active:active, .logo h1 a.active-wide:active {
 	color: #414141;
 	background: white;
 }

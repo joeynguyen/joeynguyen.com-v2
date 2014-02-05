@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,6 +51,7 @@
 				<div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
 					<div class="sprites cloud-md cloud-md-a"></div>
 					<div class="sprites cloud-md cloud-md-b"></div>
+					<div class="sprites cloud-md cloud-md-c"></div>
 				</div>
 			</div>
 
@@ -62,6 +63,7 @@
 					<div class="sprites cloud-sm cloud-sm-b"></div>
 					<div class="sprites cloud-sm cloud-sm-c"></div>
 					<div class="sprites cloud-sm cloud-sm-d"></div>
+					<div class="sprites cloud-sm cloud-sm-e"></div>
 				</div>
 			</div>
 
@@ -84,8 +86,8 @@
 						<li><a id="nav-top" href="#top"><span class="glyphicon glyphicon-home"></span>Home</a></li>
 						<li><a id="nav-about" href="#page-about"><span class="glyphicon glyphicon-user"></span>About</a></li>
 						<li><a id="nav-skills" href="#page-skills"><span class="glyphicon glyphicon-fire"></span>Skills</a></li>
-						<li><a id="nav-work" href="#page-work"><span class="glyphicon glyphicon-briefcase"></span>Work</a></li>
 						<li><a id="nav-contact" href="#page-contact"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+						<li><a id="nav-work" href="#page-work"><span class="glyphicon glyphicon-briefcase"></span>Work</a></li>
 					</ul>
 				</div>
 			</div>
@@ -142,7 +144,7 @@
 			<div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
 		</div>
 
-		<section id="parallax-first" class="parallax-window parallax-window-first visible-md visible-lg" data-stellar-background-ratio="0.7">
+		<section id="parallax-first" class="parallax-window parallax-window-first visible-md visible-lg" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
 			<div class="article-outer-box">
 				<div class="article-middle-box">
 					<div class="article-inner-box">
@@ -246,11 +248,45 @@
 			<div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
 		</div>
 
-		<section id="parallax-second" class="parallax-window parallax-window-second visible-md visible-lg" data-stellar-background-ratio="0.7">
+		<section id="parallax-second" class="parallax-window parallax-window-second visible-md visible-lg" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
 			<article>The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less. <br />- Socrates</article>
 		</section>
 
 		<section id="main-content-3" class="main-content container">
+
+			<div class="row">
+				<div id="page-credits" class="page-credits">
+				
+					<div class="page-header">
+						<div class="header-sprite credits-sprite"></div>
+						<h2>Credits</h2>
+						<h3>Thanks to the following...</h3>
+					</div>
+					
+					<div class="credits-list">
+						<div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+							<p><a href="http://f6design.com/">Jonathan Nicol</a> for the hot air balloon image.</p>
+							<p><a href="http://coverphotofinder.com/profile/1461953431">John Bishop</a> for the thundercloud image.</p>
+							<p><a href="http://www.flickr.com/photos/achew/">Tian Chew Lim</a> for the Amazon box robots image.</p>
+							<p>Whoever created the computer internal hardware image.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+		<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+			<div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
+		</div>
+
+		<div id="parallax-third" class="parallax-window parallax-window-third visible-md visible-lg" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
+			<div id="page-contact"></div>
+			<article>QUESTIONS/COMMENTS?<br /><span>contact@joeynguyen.com</span></article>
+		</div>
+
+		<section id="main-content-4" class="main-content container">
 
 			<div class="row">
 				<div id="page-work" class="page-work">
@@ -308,36 +344,6 @@
 
 		</section>
 
-		<div id="parallax-third" class="parallax-window parallax-window-third visible-md visible-lg" data-stellar-background-ratio="0.7">
-			<div id="page-contact"></div>
-			<article>QUESTIONS/COMMENTS?<br /><span>contact@joeynguyen.com</span></article>
-		</div>
-
-		<section id="main-content-4" class="main-content container">
-
-			<div class="row">
-				<div id="page-credits" class="page-credits">
-				
-					<div class="page-header">
-						<div class="header-sprite credits-sprite"></div>
-						<h2>Credits</h2>
-						<h3>Thanks to the following...</h3>
-					</div>
-					
-					<div class="credits-list">
-						<div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
-							<p><a href="http://f6design.com/">Jonathan Nicol</a> for the hot air balloon image.</p>
-							<p><a href="http://coverphotofinder.com/profile/1461953431">John Bishop</a> for the thundercloud image.</p>
-							<p><a href="http://www.flickr.com/photos/achew/">Tian Chew Lim</a> for the Amazon box robots image.</p>
-							<p>Whoever created the computer internal hardware image.</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-		</section>
-
 
 		<!-- 		<div id="turtle" class="turtle" data-stellar-ratio="2"></div> -->
 		<div id="turtle" class="turtle"></div>
@@ -356,7 +362,7 @@
 	}
 	</script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/modernizr.custom.00570.js"></script>
 	<script src="dest/js/main.js"></script>
 	
 </body>

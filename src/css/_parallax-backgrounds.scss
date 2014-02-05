@@ -7,23 +7,23 @@
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.parallax-window {
-		-webkit-background-size: 1199px 406px;
-		-moz-background-size: 1199px 406px;
-		background-size: 1199px 406px;
+		-webkit-background-size: 1199px 500px;
+		-moz-background-size: 1199px 500px;
+		background-size: 1199px 500px;
 	}
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
 	.parallax-window {
-		-webkit-background-size: 1440px 488px;
-		-moz-background-size: 1440px 488px;
-		background-size: 1440px 488px;
+		-webkit-background-size: 1440px 600px;
+		-moz-background-size: 1440px 600px;
+		background-size: 1440px 600px;
 	}
 }
-@media (min-width: 1440px) and (max-width: 1680px) {
+@media (min-width: 1441px) and (max-width: 1680px) {
 	.parallax-window {
-		-webkit-background-size: 1680px 569px;
-		-moz-background-size: 1680px 569px;
-		background-size: 1680px 569px;
+		-webkit-background-size: 1680px 700px;
+		-moz-background-size: 1680px 700px;
+		background-size: 1680px 700px;
 	}
 }
 
@@ -33,7 +33,7 @@
 }
 .parallax-window-second {
 	height: 400px;
-	background-image: image-url('parallax/box_robots.jpg');
+	background-image: image-url('parallax/box-robots.jpg');
 	border-top: 2px solid #888;
 	border-bottom: 2px solid #888;
 }

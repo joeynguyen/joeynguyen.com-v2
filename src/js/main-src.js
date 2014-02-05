@@ -1,19 +1,4 @@
-Modernizr.load([
-  // Presentational polyfills
-  {
-    // Logical list of things we would normally need
-    test : Modernizr.touch,
-    // Modernizr.load loads css and javascript by default
-    nope : 'js/jquery.stellar.min.js',
-    complete : function () {
-      // Run this after everything in this group has downloaded
-      // and executed, as well everything in all previous groups
-      // Enable Parallax
-      $.stellar({});
 
-    }
-  }
-]);
 
 $(document).ready(function() {
 
@@ -212,3 +197,20 @@ function showSkills() {
 		}
 	});
 }
+
+Modernizr.load([
+  // Presentational polyfills
+  {
+    // Logical list of things we would normally need
+    test : Modernizr.touch,
+    // Modernizr.load loads css and javascript by default
+    nope : 'js/jquery.stellar.min.js',
+    complete : function () {
+      // Run this after everything in this group has downloaded
+      // and executed, as well everything in all previous groups
+      // Enable Parallax
+      $.stellar({});
+
+    }
+  }
+]);

@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 	});
 
 	// Default task(s).
-	grunt.registerTask('build', ['compass:dist','uglify:dist','imagemin']);
+	grunt.registerTask('build', ['compass:dist','uglify:dist','newer:imagemin']);
 	grunt.registerTask('default', ['watch']);
 
 };

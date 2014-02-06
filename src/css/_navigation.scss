@@ -1,8 +1,8 @@
 .navigation {
-	width: 230px;
+	width: 240px;
 	position: absolute;
 	top: 400px;
-	right: -177px;
+	right: -187px;
 	margin-bottom: 0;
     -webkit-transition: right 1.2s ease-out;
     -moz-transition: right 1.2s ease-out;
@@ -35,7 +35,7 @@
 	display: block;
 	width: 53px;
 	height: 69px;
-	padding: 10px;
+	padding: 10px 10px 0;
 	border-top: 3px solid #414141;
 	color: #414141;
 	background: transparent;
@@ -91,7 +91,7 @@
 .logo h1 a.active-wide {
 	background: #414141;
 	color: white;
-	width: 230px;
+	width: 240px;
 	border-left: 1px solid #414141;
 	-webkit-transition: none;
 	-moz-transition: none;

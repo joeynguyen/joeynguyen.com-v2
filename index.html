@@ -23,7 +23,7 @@
 	</script>
 </head>
 <body>
-	<div id="page" class="page">
+	<div id="site" class="site">
 
 		<div id="page-top"></div>
 
@@ -96,16 +96,16 @@
 		<section id="main-content-1" class="main-content container">
 			
 			<div class="row">
-				<div id="page-about" class="page-about">
+				<div id="page-about" class="page page-about">
 				
 					<div class="page-header">
-						<div class="header-sprite about-sprite"></div>
+						<div class="header-sprite header-sprite-about"></div>
 						<h2>About Me</h2>
 						<h3>Coder of the Web and Devourer of all the Ice Cream</h3>
 					</div>
 					
 					<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 about-text">
-						<p>Hi, I'm Joey Nguyen. Welcome to my personal website. I'm currently a front end web developer at Dealertrack Technologies in Dallas, TX. While making great consumer-facing websites is what I've done most of my career and something I feel that I'm very capable at, I'm much more interested in building better back end features that improve the workflow of developers and am currently building my skillset with that focus. As a side note, I'm a big fan of standing desks and mechanical keyboards.</p>
+						<p>Hi, I'm Joey Nguyen. Welcome to my personal website! I'm currently a front end web developer at Dealertrack Technologies in Dallas, TX. While creating consumer-facing websites is what I've done most of my career, I'm currently loving my new role working on a team that's building better back end tools for business customers, following the Agile (Scrum) methodology. A couple quirks about me: I'm a big fan of standing desks and mechanical keyboards.</p>
 					</div>
 					
 					<div id="skillLevel" class="skill-level col-sm-6 col-md-6 col-lg-5 col-lg-offset-0">
@@ -140,7 +140,7 @@
 
 		</section>
 
-		<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+		<div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
 			<div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
 		</div>
 
@@ -159,10 +159,10 @@
 
 		<section id="main-content-2" class="main-content container">
 			<div class="row">
-				<div id="page-skills" class="page-skills">
+				<div id="page-skills" class="page page-skills">
 				
 					<div class="page-header">
-						<div class="header-sprite skills-sprite"></div>
+						<div class="header-sprite header-sprite-skills"></div>
 						<h2>Skills</h2>
 						<h3>I Can Do Stuff</h3>
 					</div>
@@ -196,7 +196,7 @@
 						<div class="col-sm-4">
 							<div class="skill-box skill-box-top">
 								<p><span class="glyphicon glyphicon-phone"></span></p>
-								<p class="skill-title" href="#">Front End Techniques</p>
+								<p class="skill-title" href="#">Front End Technologies</p>
 								<p>Responsive Web</p>
 								<p>Mobile First</p>
 								<p>Progressive Enhancement</p>
@@ -244,7 +244,7 @@
 			</div>
 		</section>
 
-		<div class="col-sm-12 visible-xs visible-sm">
+		<div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
 			<div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
 		</div>
 
@@ -255,21 +255,16 @@
 		<section id="main-content-3" class="main-content container">
 
 			<div class="row">
-				<div id="page-credits" class="page-credits">
+				<div id="page-contact" class="page page-contact">
 				
 					<div class="page-header">
-						<div class="header-sprite credits-sprite"></div>
-						<h2>Credits</h2>
-						<h3>Thanks to the following...</h3>
+						<div class="header-sprite header-sprite-contact"></div>
+						<h2>Contact</h2>
+						<h3>Questions/Comments?</h3>
 					</div>
 					
-					<div class="credits-list">
-						<div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
-							<p><a href="http://f6design.com/">Jonathan Nicol</a> for the hot air balloon image.</p>
-							<p><a href="http://coverphotofinder.com/profile/1461953431">John Bishop</a> for the thundercloud image.</p>
-							<p><a href="http://www.flickr.com/photos/achew/">Tian Chew Lim</a> for the Amazon box robots image.</p>
-							<p>Whoever created the computer internal hardware image.</p>
-						</div>
+					<div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+						<p>Get in touch with me at: contact(at)joeynguyen.com</p>
 					</div>
 
 				</div>
@@ -277,22 +272,26 @@
 
 		</section>
 
-		<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+		<div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
 			<div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
 		</div>
 
-		<div id="parallax-third" class="parallax-window parallax-window-third hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
-			<div id="page-contact"></div>
-			<article>QUESTIONS/COMMENTS?<br /><span>contact@joeynguyen.com</span></article>
-		</div>
+		<section id="parallax-third" class="parallax-window parallax-window-third hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
+			<article><span>CREDITS</span><br />
+				<a href="http://f6design.com/">Jonathan Nicol</a> for the hot air balloon image.<br />
+				<a href="http://coverphotofinder.com/profile/1461953431">John Bishop</a> for the thundercloud image.<br />
+				<a href="http://www.flickr.com/photos/achew/">Tian Chew Lim</a> for the Amazon box robots image.<br />
+				Whoever created the computer internal hardware image (sorry couldn't find author).
+			</article>
+		</section>
 
 		<section id="main-content-4" class="main-content container">
 
 			<div class="row">
-				<div id="page-work" class="page-work">
+				<div id="page-work" class="page page-work">
 				
 					<div class="page-header">
-						<div class="header-sprite work-sprite"></div>
+						<div class="header-sprite header-sprite-work"></div>
 						<h2>Work</h2>
 						<h3>These look strangely familiar...</h3>
 					</div>

@@ -65,7 +65,7 @@
 }
 .parallax-window.parallax-window-second article {
 	font-family: 'Sorts Mill Goudy', Georgia, 'Times New Roman', Times, serif;
-	color: rgb(125, 91, 91);
+	color: #5B3434;
 	font-size: 32px;
 	font-style: italic;
 	width: 45%;
@@ -74,12 +74,15 @@
 }
 .parallax-window.parallax-window-third article {
 	color: #414141;
+	font-size: 23px;
+	font-family: 'Sorts Mill Goudy', Georgia, 'Times New Roman', Times, serif;
 	text-align: right;
-	width: 97%;
+	width: 48%;
 	top: 48px;
+	left: 47%;
 }
 .parallax-window.parallax-window-third article span {
-	font-size: 60px;
+	font-size: 50px;
 }
 .article-outer-box {
 	width: 90%;
@@ -100,7 +103,7 @@
 	margin: 20px auto 30px;
 	width: 120px;
 	height: 73px;
-	background-image: image-url('article-decoration@2x.png');
+	background-image: image-url('article-decoration.png');
 }
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 	.article-decoration {

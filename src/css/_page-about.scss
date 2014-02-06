@@ -19,7 +19,7 @@
 /* PROGRESS BAR */
 
 .progress {
-	height: 30px;
+	height: 34px;
 	position: relative;
 	background: #f9f9f9 image-url('stripe.png');
 	margin-bottom: 18px;
@@ -47,10 +47,11 @@
 }
 
 .progress-bar-label {
+	font-size: 15px;
 	position: absolute;
-	left: 20px;
+	left: 15px;
 	font-family: 'Oswald', sans-serif;
-	line-height: 30px;
+	line-height: 34px;
 	text-transform: uppercase;
 	z-index: 1;
 	transition: color ease 1.5s;

@@ -58,9 +58,7 @@
 .portfolio-image-3 {
 	background-image: image-url('work/lone-star-xs.jpg');
 }
-.portfolio-image-4 {
-	background-image: image-url('work/auto-depot-xs.jpg');
-}
+
 .portfolio-content {
 	margin: 20px 0;
 }
@@ -127,9 +125,7 @@
 .work-img-3 {
 	background-image: image-url('work/lone-star-xs.jpg');
 }
-.work-img-4 {
-	background-image: image-url('work/auto-depot-xs.jpg');
-}
+
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 	.portfolio-image {
 		-webkit-background-size: 290px 159px;
@@ -145,9 +141,7 @@
 	.portfolio-image-3 {
 		background-image: image-url('work/lone-star-sm.jpg');
 	}
-	.portfolio-image-4 {
-		background-image: image-url('work/auto-depot-sm.jpg');
-	}
+
 	.work-img {
 		-webkit-background-size: 290px 159px;
 		-moz-background-size: 290px 159px;
@@ -162,9 +156,7 @@
 	.work-img-3 {
 		background-image: image-url('work/lone-star-sm.jpg');
 	}
-	.work-img-4 {
-		background-image: image-url('work/auto-depot-sm.jpg');
-	}
+
 	.ribbon {
 		background-image: image-url('line@2x.png');
 		-webkit-background-size: 100px 28px;
@@ -182,6 +174,15 @@
 		-webkit-background-size: 630px 346px;
 		-moz-background-size: 630px 346px;
 		background-size: 630px 346px;
+	}
+	.portfolio-image-1 {
+		background-image: image-url('work/gregg-orr-sm.jpg');
+	}
+	.portfolio-image-2 {
+		background-image: image-url('work/sewell-sm.jpg');
+	}
+	.portfolio-image-3 {
+		background-image: image-url('work/lone-star-sm.jpg');
 	}
 
 	.work-img {
@@ -207,8 +208,5 @@
 	}
 	.portfolio-image-3 {
 		background-image: image-url('work/lone-star-md.jpg');
-	}
-	.portfolio-image-4 {
-		background-image: image-url('work/auto-depot-md.jpg');
 	}
 }

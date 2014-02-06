@@ -1,4 +1,4 @@
-.page {
+.site {
 	overflow: hidden;
 	position: relative;	
 }
@@ -11,27 +11,37 @@
 	background-image: image-url('header-sprites.jpg');
 	margin: 0 auto;
 }
-.about-sprite {
+.header-sprite-about {
 	width: 160px;
 	background-position: 0px 0px;
 }
-.skills-sprite {
+.header-sprite-skills {
 	width: 150px;
 	background-position: -160px 0px;
 }
-.work-sprite {
+.header-sprite-work {
 	width: 100px;
 	background-position: -310px 0px;
 }
-.credits-sprite {
+.header-sprite-contact {
 	width: 150px;
 	background-position: -411px 0px;
 	height: 156px;
 }
+.page {
+	overflow: hidden;
+	margin: 20px 0;
+}
+@media (min-width: 768px) {
+	.page {
+		overflow: hidden;
+		margin: 40px 0;
+	}	
+}
 .page-header {
 	background: image-url('page-header.png') center bottom no-repeat;
 	padding-bottom: 20px;
-	margin-bottom: 30px;
+	margin: 0 0 30px;
 	border-bottom: none;
 }
 @media (min-width: 768px), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {

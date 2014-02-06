@@ -13,9 +13,6 @@ $(document).ready(function() {
     }, 50);
     // Navigation links click scroll page
     navigationScroll();
-    // Hide Skill Boxes
-    $skillBoxes = $("#page-skills .skill-box");
-    $skillBoxes.addClass("fade");
     // Enable Navigation dropdown transformations
     menuTransform();
     // Check for current position of viewport on visit or page refresh
@@ -41,14 +38,6 @@ $(document).ready(function() {
             $menu.addClass("fixed");
         } else {
             $menu.removeClass("fixed");
-        }
-        /* Activate Skills Animation */
-        if ($window_top >= $parallaxBalloonHeight + 145) {
-            $(".progress-bar").addClass("active");
-            $(".progress-bar-label").addClass("active");
-        } else {
-            $(".progress-bar").removeClass("active");
-            $(".progress-bar-label").removeClass("active");
         }
     });
     /* Portfolio carousel */
@@ -153,6 +142,7 @@ function hideNavDropdown() {
 
 // Show Skill Boxes
 function showSkills() {
+    $skillBoxes = $("#page-skills .skill-box");
     $skillBoxes.each(function() {
         $boxCurrentPos = $(this).offset().top;
         if ($window_top >= $boxCurrentPos - 550) {
@@ -172,5 +162,18 @@ Modernizr.load([ // Presentational polyfills
         // and executed, as well everything in all previous groups
         // Enable Parallax
         $.stellar({});
+        // Hide Skill Boxes
+        $skillBoxes = $("#page-skills .skill-box");
+        $skillBoxes.addClass("fade");
+        $(window).on("scroll", function() {
+            /* Activate Skills Animation */
+            if ($window_top >= $parallaxBalloonHeight + 145) {
+                $(".progress-bar").addClass("active");
+                $(".progress-bar-label").addClass("active");
+            } else {
+                $(".progress-bar").removeClass("active");
+                $(".progress-bar-label").removeClass("active");
+            }
+        });
     }
 } ]);

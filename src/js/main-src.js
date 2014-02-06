@@ -21,10 +21,6 @@ $(document).ready(function() {
 	// Navigation links click scroll page
 	navigationScroll();
 
-	// Hide Skill Boxes
-	$skillBoxes = $("#page-skills .skill-box");
-	$skillBoxes.addClass("fade");
-
 	// Enable Navigation dropdown transformations
 	menuTransform();
 
@@ -61,16 +57,6 @@ $(document).ready(function() {
 		}
 		else {
 			$menu.removeClass("fixed");	
-		}
-
-		/* Activate Skills Animation */
-		if ( $window_top >= $parallaxBalloonHeight + 145 ) {
-			$('.progress-bar').addClass('active');
-			$('.progress-bar-label').addClass('active');
-		}
-		else {
-			$('.progress-bar').removeClass('active');
-			$('.progress-bar-label').removeClass('active');
 		}
 
 	});
@@ -190,6 +176,7 @@ function hideNavDropdown() {
 
 // Show Skill Boxes
 function showSkills() {
+    $skillBoxes = $("#page-skills .skill-box");
 	$skillBoxes.each(function() {
 		$boxCurrentPos = $(this).offset().top;
 		if ( $window_top >= $boxCurrentPos - 550 ) {
@@ -210,6 +197,20 @@ Modernizr.load([
       // and executed, as well everything in all previous groups
       // Enable Parallax
       $.stellar({});
+      // Hide Skill Boxes
+      $skillBoxes = $("#page-skills .skill-box");
+      $skillBoxes.addClass("fade");
+      $(window).on("scroll", function() {
+        /* Activate Skills Animation */
+        if ( $window_top >= $parallaxBalloonHeight + 145 ) {
+            $('.progress-bar').addClass('active');
+            $('.progress-bar-label').addClass('active');
+        }
+        else {
+            $('.progress-bar').removeClass('active');
+            $('.progress-bar-label').removeClass('active');
+        }
+      });
 
     }
   }

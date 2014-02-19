@@ -1,8 +1,24 @@
-
-
 $(document).ready(function() {
 
-	// // Fly Turtle Fly!
+
+	// Enable Balloon animation	
+	$("#animate-balloon").click( function() {
+
+		var balloonA = $("#parallax-balloon-bg-a");
+		var balloonB = $("#parallax-balloon-bg-b");
+		var balloonC = $("#parallax-balloon-bg-c");
+		var balloonD = $("#parallax-balloon-bg-d");
+
+		TweenLite.to(balloonA, 10, {left:"+=532px"});
+		TweenLite.to(balloonB, 10, {top:"-=860px"});
+		TweenLite.to(balloonC, 10, {left:"+=332px"});
+		TweenLite.to(balloonD, 10, {left:"+=132px"});
+		$(this).fadeOut();
+
+	});
+
+
+	// Fly Turtle Fly!
 	$turtle = $('#turtle');
 
 	function moveTurtle() {
@@ -31,6 +47,7 @@ $(document).ready(function() {
 		$menu.addClass("fixed");
 	}
 
+
 	// Scroll events handler
 		
 	$(window).on("scroll", function() {
@@ -38,7 +55,7 @@ $(document).ready(function() {
 		$window_top = $(window).scrollTop();
 
 		// Enable Balloon Parallax scrolling
-		parallaxScroll();
+		// parallaxScroll();
 
 		// Hide navigation dropdown
 		hideNavDropdown();
@@ -95,20 +112,6 @@ $(document).ready(function() {
 /////////////////////////
 ////// FUNCTIONS ////////
 /////////////////////////
-
-// Enable Balloon Parallax scrolling
-function parallaxScroll(){
-	$scrolled = $(window).scrollTop();
-	$balloonA = $('#parallax-balloon-bg-a');
-	$balloonB = $('#parallax-balloon-bg-b');
-	$balloonC = $('#parallax-balloon-bg-c');
-	$balloonD = $('#parallax-balloon-bg-d');
-
-	$balloonA.css('top',(0-($scrolled*1))+'px');
-	$balloonB.css('top',(0-($scrolled*1.75))+'px');
-	$balloonC.css('top',(0-($scrolled*0.4))+'px');
-	$balloonD.css('top',(0-($scrolled*0.2))+'px');
-}
 
 // Check if its content is empty
 function isEmpty( el ) {
@@ -184,7 +187,6 @@ function showSkills() {
 		}
 	});
 }
-
 Modernizr.load([
   // Presentational polyfills
   {
@@ -215,3 +217,8 @@ Modernizr.load([
     }
   }
 ]);
+
+if (Modernizr.touch) {
+    $('.progress-bar, .progress-bar-label').addClass('active');
+	$("#animate-balloon").empty().append("Tap to Animate");
+}

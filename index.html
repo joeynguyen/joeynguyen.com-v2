@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Website of Joey Nguyen, Web Developer and Devourer of all the Ice Cream</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="dest/css/style.css" />
+	<link rel="stylesheet" href="css/style.css" />
 	<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy|Oswald' rel='stylesheet' type='text/css'>
 	<script type="text/javascript">
 
@@ -28,7 +28,8 @@
 		<div id="page-top"></div>
 
 		<div id="parallax-balloon" class="parallax-window-balloon-outer parallax-window-balloon">
-			<!-- Parallax  foreground clouds -->
+			<button id="animate-balloon" class="animate-balloon">Click to Animate</button>
+			<!-- Parallax foreground clouds -->
 
 			<div id="parallax-balloon-bg-a" class="parallax-balloon-bg container">
 				<div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
@@ -45,7 +46,7 @@
 				</div>
 			</div>
 
-			<!-- Parallax  midground clouds -->
+			<!-- Parallax midground clouds -->
 
 			<div id="parallax-balloon-bg-c" class="parallax-balloon-bg container">
 				<div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
@@ -55,7 +56,7 @@
 				</div>
 			</div>
 
-			<!-- Parallax  background clouds -->
+			<!-- Parallax background clouds -->
 
 			<div id="parallax-balloon-bg-d" class="parallax-balloon-bg container">
 				<div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
@@ -72,9 +73,6 @@
 		<header>
 
 			<div id="menu" class="navigation wide">
-				<!-- <p id="alert" style="position: fixed; top:0; left: 0;"></p>
-				<p id="alert2" style="position: fixed; top:10px; left: 0;"></p>
-				<p id="alert3" style="position: fixed; top:20px; left: 0;"></p> -->
 				<div id="navigation-elements-wrapper">
 					<div class="navigation-header">
 						<div class="logo">
@@ -110,28 +108,28 @@
 					
 					<div id="skillLevel" class="skill-level col-sm-6 col-md-6 col-lg-5 col-lg-offset-0">
 						<div class="progress">
-							<div class="progress-bar active progress-bar-norris" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							<div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
 								<span class="sr-only">80% Expertise</span>
 							</div>
-							<div class="progress-bar-label active">Photoshop Slicing</div>
+							<div class="progress-bar-label">Photoshop Slicing</div>
 						</div>
 						<div class="progress">
-							<div class="progress-bar active progress-bar-norris" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+							<div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
 								<span class="sr-only">90% Expertise</span>
 							</div>
-							<div class="progress-bar-label active">Command Line</div>
+							<div class="progress-bar-label">Command Line</div>
 							</div>
 						<div class="progress">
-							<div class="progress-bar active progress-bar-norris" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+							<div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
 								<span class="sr-only">50% Expertise</span>
 							</div>
-							<div class="progress-bar-label active">Programming</div>
+							<div class="progress-bar-label">Programming</div>
 							</div>
 						<div class="progress">
-							  <div class="progress-bar active progress-bar-norris" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+							  <div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
 									<span class="sr-only">70% Expertise</span>
 							  </div>
-							  <div class="progress-bar-label active">Workflow Automation</div>
+							  <div class="progress-bar-label">Workflow Automation</div>
 						</div>
 					</div>
 					
@@ -361,8 +359,10 @@
 	}
 	</script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/CSSPlugin.min.js"></script>
 	<script src="js/modernizr.custom.00570.js"></script>
-	<script src="dest/js/main.js"></script>
+	<script src="js/main.min.js"></script>
 	
 </body>
 </html>

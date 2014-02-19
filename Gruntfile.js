@@ -70,7 +70,7 @@ module.exports = function(grunt) {
 					compress: true,
 				},
 				files: {
-					'js/main.js': [ 'src/js/*.js' ]
+					'js/main.min.js': [ 'src/js/*.js' ]
 				}
 			}
 		},

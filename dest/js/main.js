@@ -1,5 +1,25 @@
 $(document).ready(function() {
-    // // Fly Turtle Fly!
+    // Enable Balloon animation	
+    $("#animate-balloon").click(function() {
+        var balloonA = $("#parallax-balloon-bg-a");
+        var balloonB = $("#parallax-balloon-bg-b");
+        var balloonC = $("#parallax-balloon-bg-c");
+        var balloonD = $("#parallax-balloon-bg-d");
+        TweenLite.to(balloonA, 10, {
+            left: "+=532px"
+        });
+        TweenLite.to(balloonB, 10, {
+            top: "-=860px"
+        });
+        TweenLite.to(balloonC, 10, {
+            left: "+=332px"
+        });
+        TweenLite.to(balloonD, 10, {
+            left: "+=132px"
+        });
+        $(this).fadeOut();
+    });
+    // Fly Turtle Fly!
     $turtle = $("#turtle");
     function moveTurtle() {
         $turtle.css("top", parseInt($turtle.css("top")) - 1 + "px");
@@ -25,7 +45,7 @@ $(document).ready(function() {
     $(window).on("scroll", function() {
         $window_top = $(window).scrollTop();
         // Enable Balloon Parallax scrolling
-        parallaxScroll();
+        // parallaxScroll();
         // Hide navigation dropdown
         hideNavDropdown();
         // Show Skill Boxes
@@ -67,19 +87,6 @@ $(document).ready(function() {
 /////////////////////////
 ////// FUNCTIONS ////////
 /////////////////////////
-// Enable Balloon Parallax scrolling
-function parallaxScroll() {
-    $scrolled = $(window).scrollTop();
-    $balloonA = $("#parallax-balloon-bg-a");
-    $balloonB = $("#parallax-balloon-bg-b");
-    $balloonC = $("#parallax-balloon-bg-c");
-    $balloonD = $("#parallax-balloon-bg-d");
-    $balloonA.css("top", 0 - $scrolled * 1 + "px");
-    $balloonB.css("top", 0 - $scrolled * 1.75 + "px");
-    $balloonC.css("top", 0 - $scrolled * .4 + "px");
-    $balloonD.css("top", 0 - $scrolled * .2 + "px");
-}
-
 // Check if its content is empty
 function isEmpty(el) {
     return !$.trim(el.html());
@@ -177,3 +184,8 @@ Modernizr.load([ // Presentational polyfills
         });
     }
 } ]);
+
+if (Modernizr.touch) {
+    $(".progress-bar, .progress-bar-label").addClass("active");
+    $("#animate-balloon").empty().append("Tap to Animate");
+}

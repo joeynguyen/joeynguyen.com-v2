@@ -242,7 +242,6 @@ header {
 
 /* line 29, ../../src/css/_navigation.scss */
 .logo h1 a {
-  font-weight: bold;
   font-size: 27px;
   text-align: center;
   line-height: 27px;
@@ -260,13 +259,13 @@ header {
   transition: width 1.2s ease-out;
 }
 
-/* line 48, ../../src/css/_navigation.scss */
+/* line 47, ../../src/css/_navigation.scss */
 .logo h1 a:hover, .logo h1 a:active {
   background: #414141;
   color: white;
 }
 
-/* line 52, ../../src/css/_navigation.scss */
+/* line 51, ../../src/css/_navigation.scss */
 .logo h1 a.active {
   background: #414141;
   color: white;
@@ -278,7 +277,7 @@ header {
   transition: width 1s ease-out;
 }
 
-/* line 62, ../../src/css/_navigation.scss */
+/* line 61, ../../src/css/_navigation.scss */
 .logo h1 a span {
   font-size: 0px;
   float: left;
@@ -290,27 +289,27 @@ header {
   transition: font 2s;
 }
 
-/* line 72, ../../src/css/_navigation.scss */
+/* line 71, ../../src/css/_navigation.scss */
 .logo h1 a span:first-letter {
   font-size: 27px;
 }
 
-/* line 75, ../../src/css/_navigation.scss */
+/* line 74, ../../src/css/_navigation.scss */
 .logo h1 a span::first-letter {
   font-size: 27px;
 }
 
-/* line 78, ../../src/css/_navigation.scss */
+/* line 77, ../../src/css/_navigation.scss */
 .logo h1 a span.first-name {
   width: 10px;
 }
 
-/* line 81, ../../src/css/_navigation.scss */
+/* line 80, ../../src/css/_navigation.scss */
 .logo h1 a span.last-name {
   width: 23px;
 }
 
-/* line 84, ../../src/css/_navigation.scss */
+/* line 83, ../../src/css/_navigation.scss */
 .logo h1 a span.glyphicon {
   font-size: 18px;
   height: 18px;
@@ -318,7 +317,7 @@ header {
   display: inline;
 }
 
-/* line 91, ../../src/css/_navigation.scss */
+/* line 90, ../../src/css/_navigation.scss */
 .logo h1 a.active-wide {
   background: #414141;
   color: white;
@@ -330,13 +329,13 @@ header {
   transition: none;
 }
 
-/* line 101, ../../src/css/_navigation.scss */
+/* line 100, ../../src/css/_navigation.scss */
 .logo h1 a.active:hover, .logo h1 a.active-wide:hover, .logo h1 a.active:active, .logo h1 a.active-wide:active {
   color: #414141;
   background: white;
 }
 
-/* line 105, ../../src/css/_navigation.scss */
+/* line 104, ../../src/css/_navigation.scss */
 .logo h1 a.active-wide span {
   font-size: 27px;
   float: none;
@@ -344,23 +343,23 @@ header {
   display: inline;
 }
 
-/* line 111, ../../src/css/_navigation.scss */
+/* line 110, ../../src/css/_navigation.scss */
 .logo h1 a.active-wide span.glyphicon {
   font-size: 18px;
 }
 
-/* line 115, ../../src/css/_navigation.scss */
+/* line 114, ../../src/css/_navigation.scss */
 .navigation-nav {
   border-bottom: 1px solid #414141;
   border-left: 1px solid #414141;
 }
 
-/* line 120, ../../src/css/_navigation.scss */
+/* line 119, ../../src/css/_navigation.scss */
 .navigation-nav li {
   line-height: 1em;
 }
 
-/* line 124, ../../src/css/_navigation.scss */
+/* line 123, ../../src/css/_navigation.scss */
 .navigation-nav li a {
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
@@ -375,13 +374,13 @@ header {
   background: #414141;
 }
 
-/* line 137, ../../src/css/_navigation.scss */
+/* line 136, ../../src/css/_navigation.scss */
 .navigation-nav li a:hover, .navigation-nav li a:focus {
   color: #414141;
   background: white;
 }
 
-/* line 141, ../../src/css/_navigation.scss */
+/* line 140, ../../src/css/_navigation.scss */
 .navigation-nav li a span.glyphicon {
   font-size: 28px;
   width: 51px;
@@ -957,45 +956,59 @@ header {
   overflow: hidden;
 }
 
-/* line 6, ../../src/css/_parallax-balloon.scss */
+/* line 7, ../../src/css/_parallax-balloon.scss */
+.animate-balloon {
+  position: absolute;
+  top: 20px;
+  left: 49%;
+  background: transparent;
+  padding: 5px;
+  border: 1px solid #414141;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+/* line 20, ../../src/css/_parallax-balloon.scss */
 .parallax-window-balloon {
   height: 400px;
   background: #e3e5e5;
   z-index: 1000;
 }
 
-/* line 11, ../../src/css/_parallax-balloon.scss */
+/* line 25, ../../src/css/_parallax-balloon.scss */
 .parallax-balloon-bg {
   position: absolute;
   top: 0;
 }
 
 /* foreground (clouds) */
-/* line 17, ../../src/css/_parallax-balloon.scss */
+/* line 31, ../../src/css/_parallax-balloon.scss */
 #parallax-balloon-bg-a {
   z-index: 4;
 }
 
 /* foreground (balloon) */
-/* line 23, ../../src/css/_parallax-balloon.scss */
+/* line 37, ../../src/css/_parallax-balloon.scss */
 #parallax-balloon-bg-b {
   z-index: 3;
 }
 
 /* midground (clouds) */
-/* line 28, ../../src/css/_parallax-balloon.scss */
+/* line 42, ../../src/css/_parallax-balloon.scss */
 #parallax-balloon-bg-c {
   z-index: 2;
 }
 
 /* background (clouds) */
-/* line 33, ../../src/css/_parallax-balloon.scss */
+/* line 47, ../../src/css/_parallax-balloon.scss */
 #parallax-balloon-bg-d {
   z-index: 1;
 }
 
 /* sprites */
-/* line 39, ../../src/css/_parallax-balloon.scss */
+/* line 53, ../../src/css/_parallax-balloon.scss */
 .parallax-balloon-bg .sprites {
   background-image: url('../../images/parallax/balloon-sprites-xs.png?1391653547');
   background-repeat: no-repeat;
@@ -1003,7 +1016,7 @@ header {
   position: absolute;
 }
 
-/* line 46, ../../src/css/_parallax-balloon.scss */
+/* line 60, ../../src/css/_parallax-balloon.scss */
 .balloon {
   width: 180px;
   height: 258px;
@@ -1012,94 +1025,94 @@ header {
   left: 115px;
 }
 
-/* line 54, ../../src/css/_parallax-balloon.scss */
+/* line 68, ../../src/css/_parallax-balloon.scss */
 .cloud-lg {
   width: 166px;
   height: 45px;
   background-position: left -258px;
 }
 
-/* line 59, ../../src/css/_parallax-balloon.scss */
+/* line 73, ../../src/css/_parallax-balloon.scss */
 .cloud-md {
   width: 107px;
   height: 36px;
   background-position: left -303px;
 }
 
-/* line 64, ../../src/css/_parallax-balloon.scss */
+/* line 78, ../../src/css/_parallax-balloon.scss */
 .cloud-sm {
   width: 55px;
   height: 16px;
   background-position: -107px -303px;
 }
 
-/* line 69, ../../src/css/_parallax-balloon.scss */
+/* line 83, ../../src/css/_parallax-balloon.scss */
 .cloud-lg-a {
   top: 118px;
   left: 400px;
 }
 
-/* line 73, ../../src/css/_parallax-balloon.scss */
+/* line 87, ../../src/css/_parallax-balloon.scss */
 .cloud-lg-b {
   top: 305px;
   left: 30px;
 }
 
-/* line 77, ../../src/css/_parallax-balloon.scss */
+/* line 91, ../../src/css/_parallax-balloon.scss */
 .cloud-md-a {
   top: 150px;
   left: 236px;
 }
 
-/* line 81, ../../src/css/_parallax-balloon.scss */
+/* line 95, ../../src/css/_parallax-balloon.scss */
 .cloud-md-b {
   top: 265px;
   left: 542px;
 }
 
-/* line 85, ../../src/css/_parallax-balloon.scss */
+/* line 99, ../../src/css/_parallax-balloon.scss */
 .cloud-md-c {
   top: 250px;
   left: 1375px;
 }
 
-/* line 89, ../../src/css/_parallax-balloon.scss */
+/* line 103, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-a {
   top: 129px;
   left: 10px;
 }
 
-/* line 93, ../../src/css/_parallax-balloon.scss */
+/* line 107, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-b {
   top: 331px;
   left: 401px;
 }
 
-/* line 97, ../../src/css/_parallax-balloon.scss */
+/* line 111, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-c {
   top: 300px;
   left: 75px;
 }
 
-/* line 101, ../../src/css/_parallax-balloon.scss */
+/* line 115, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-d {
   top: 26px;
   left: 400px;
 }
 
-/* line 105, ../../src/css/_parallax-balloon.scss */
+/* line 119, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-e {
   top: 100px;
   left: 1575px;
 }
 
 @media (min-width: 768px) {
-  /* line 111, ../../src/css/_parallax-balloon.scss */
+  /* line 125, ../../src/css/_parallax-balloon.scss */
   .parallax-balloon-bg .sprites {
     background-image: url('../../images/parallax/balloon-sprites.png?1391653547');
   }
 
-  /* line 114, ../../src/css/_parallax-balloon.scss */
+  /* line 128, ../../src/css/_parallax-balloon.scss */
   .balloon {
     width: 529px;
     height: 753px;
@@ -1107,70 +1120,70 @@ header {
     left: 52%;
   }
 
-  /* line 120, ../../src/css/_parallax-balloon.scss */
+  /* line 134, ../../src/css/_parallax-balloon.scss */
   .cloud-lg {
     width: 488px;
     height: 138px;
     background-position: left -757px;
   }
 
-  /* line 125, ../../src/css/_parallax-balloon.scss */
+  /* line 139, ../../src/css/_parallax-balloon.scss */
   .cloud-md {
     width: 311px;
     height: 105px;
     background-position: left -895px;
   }
 
-  /* line 130, ../../src/css/_parallax-balloon.scss */
+  /* line 144, ../../src/css/_parallax-balloon.scss */
   .cloud-sm {
     width: 160px;
     height: 48px;
     background-position: -311px -895px;
   }
 
-  /* line 135, ../../src/css/_parallax-balloon.scss */
+  /* line 149, ../../src/css/_parallax-balloon.scss */
   .cloud-lg-a {
     top: 118px;
     left: 76%;
   }
 
-  /* line 139, ../../src/css/_parallax-balloon.scss */
+  /* line 153, ../../src/css/_parallax-balloon.scss */
   .cloud-lg-b {
     top: 343px;
     left: 21%;
   }
 
-  /* line 143, ../../src/css/_parallax-balloon.scss */
+  /* line 157, ../../src/css/_parallax-balloon.scss */
   .cloud-md-a {
     top: 150px;
     left: -6%;
   }
 
-  /* line 147, ../../src/css/_parallax-balloon.scss */
+  /* line 161, ../../src/css/_parallax-balloon.scss */
   .cloud-md-b {
     top: 65px;
     left: 42%;
   }
 
-  /* line 151, ../../src/css/_parallax-balloon.scss */
+  /* line 165, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-a {
     top: 79px;
     left: 12%;
   }
 
-  /* line 155, ../../src/css/_parallax-balloon.scss */
+  /* line 169, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-b {
     top: 331px;
     left: 92%;
   }
 
-  /* line 159, ../../src/css/_parallax-balloon.scss */
+  /* line 173, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-c {
     top: 343px;
     left: -8%;
   }
 
-  /* line 163, ../../src/css/_parallax-balloon.scss */
+  /* line 177, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-d {
     top: 26px;
     left: 107%;

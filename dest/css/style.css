@@ -190,10 +190,98 @@ h4 {
   top: 3000px;
   width: 49px;
   height: 80px;
+  -webkit-animation-name: turtle;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: turtle;
+  -moz-animation-duration: 60s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-name: turtle;
+  -ms-animation-duration: 60s;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-direction: normal;
+  -ms-animation-delay: 0;
+  -ms-animation-play-state: running;
+  -ms-animation-fill-mode: forwards;
+  animation-name: turtle;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 0;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes turtle {
+  /* line 131, ../../src/css/_layout.scss */
+  0% {
+    top: 3000px;
+    left: 0;
+  }
+
+  /* line 135, ../../src/css/_layout.scss */
+  100% {
+    top: 0px;
+    left: 0;
+  }
+}
+
+@-moz-keyframes turtle {
+  /* line 141, ../../src/css/_layout.scss */
+  0% {
+    top: 3000px;
+    left: 0;
+  }
+
+  /* line 145, ../../src/css/_layout.scss */
+  100% {
+    top: 0px;
+    left: 0;
+  }
+}
+
+@-ms-keyframes turtle {
+  /* line 151, ../../src/css/_layout.scss */
+  0% {
+    top: 3000px;
+    left: 0;
+  }
+
+  /* line 155, ../../src/css/_layout.scss */
+  100% {
+    top: 0px;
+    left: 0;
+  }
+}
+
+@keyframes turtle {
+  /* line 161, ../../src/css/_layout.scss */
+  0% {
+    top: 3000px;
+    left: 0;
+  }
+
+  /* line 165, ../../src/css/_layout.scss */
+  100% {
+    top: 0px;
+    left: 0;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* line 99, ../../src/css/_layout.scss */
+  /* line 171, ../../src/css/_layout.scss */
   .turtle {
     background-image: url('../../images/turtle@2x.png?1391653548');
     -webkit-background-size: 49px 80px;
@@ -960,55 +1048,422 @@ header {
 .animate-balloon {
   position: absolute;
   top: 20px;
-  left: 49%;
+  left: 50%;
   background: transparent;
   padding: 5px;
   border: 1px solid #414141;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  box-sizing: border-box;
+  width: 114px;
+  margin-left: -57px;
   z-index: 1000;
 }
 
-/* line 20, ../../src/css/_parallax-balloon.scss */
+/* line 23, ../../src/css/_parallax-balloon.scss */
 .parallax-window-balloon {
   height: 400px;
   background: #e3e5e5;
   z-index: 1000;
 }
 
-/* line 25, ../../src/css/_parallax-balloon.scss */
+/* line 29, ../../src/css/_parallax-balloon.scss */
 .parallax-balloon-bg {
   position: absolute;
   top: 0;
 }
 
 /* foreground (clouds) */
-/* line 31, ../../src/css/_parallax-balloon.scss */
+/* line 35, ../../src/css/_parallax-balloon.scss */
 #parallax-balloon-bg-a {
   z-index: 4;
 }
+/* line 39, ../../src/css/_parallax-balloon.scss */
+#parallax-balloon-bg-a.animate {
+  -webkit-animation-name: cloud-bg-a;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: cloud-bg-a;
+  -moz-animation-duration: 10s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-name: cloud-bg-a;
+  -ms-animation-duration: 10s;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-direction: normal;
+  -ms-animation-delay: 0;
+  -ms-animation-play-state: running;
+  -ms-animation-fill-mode: forwards;
+  animation-name: cloud-bg-a;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 0;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cloud-bg-a {
+  /* line 77, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 81, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 600px;
+  }
+}
+
+@-moz-keyframes cloud-bg-a {
+  /* line 87, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 91, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 600px;
+  }
+}
+
+@-ms-keyframes cloud-bg-a {
+  /* line 97, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 101, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 600px;
+  }
+}
+
+@keyframes cloud-bg-a {
+  /* line 107, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 111, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 600px;
+  }
+}
 
 /* foreground (balloon) */
-/* line 37, ../../src/css/_parallax-balloon.scss */
+/* line 118, ../../src/css/_parallax-balloon.scss */
 #parallax-balloon-bg-b {
   z-index: 3;
 }
+/* line 121, ../../src/css/_parallax-balloon.scss */
+#parallax-balloon-bg-b.animate {
+  -webkit-animation-name: balloon;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: balloon;
+  -moz-animation-duration: 10s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-name: balloon;
+  -ms-animation-duration: 10s;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-direction: normal;
+  -ms-animation-delay: 0;
+  -ms-animation-play-state: running;
+  -ms-animation-fill-mode: forwards;
+  animation-name: balloon;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 0;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes balloon {
+  /* line 158, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 162, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: -900px;
+    left: 200px;
+  }
+}
+
+@-moz-keyframes balloon {
+  /* line 168, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 172, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: -900px;
+    left: 200px;
+  }
+}
+
+@-ms-keyframes balloon {
+  /* line 178, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 182, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: -900px;
+    left: 200px;
+  }
+}
+
+@keyframes balloon {
+  /* line 188, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 192, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: -900px;
+    left: 200px;
+  }
+}
 
 /* midground (clouds) */
-/* line 42, ../../src/css/_parallax-balloon.scss */
+/* line 199, ../../src/css/_parallax-balloon.scss */
 #parallax-balloon-bg-c {
   z-index: 2;
 }
+/* line 202, ../../src/css/_parallax-balloon.scss */
+#parallax-balloon-bg-c.animate {
+  -webkit-animation-name: cloud-bg-c;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: cloud-bg-c;
+  -moz-animation-duration: 10s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-name: cloud-bg-c;
+  -ms-animation-duration: 10s;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-direction: normal;
+  -ms-animation-delay: 0;
+  -ms-animation-play-state: running;
+  -ms-animation-fill-mode: forwards;
+  animation-name: cloud-bg-c;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 0;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cloud-bg-c {
+  /* line 240, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 244, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 200px;
+  }
+}
+
+@-moz-keyframes cloud-bg-c {
+  /* line 250, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 254, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 200px;
+  }
+}
+
+@-ms-keyframes cloud-bg-c {
+  /* line 260, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 264, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 200px;
+  }
+}
+
+@keyframes cloud-bg-c {
+  /* line 270, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 274, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 200px;
+  }
+}
 
 /* background (clouds) */
-/* line 47, ../../src/css/_parallax-balloon.scss */
+/* line 281, ../../src/css/_parallax-balloon.scss */
 #parallax-balloon-bg-d {
   z-index: 1;
 }
+/* line 284, ../../src/css/_parallax-balloon.scss */
+#parallax-balloon-bg-d.animate {
+  -webkit-animation-name: cloud-bg-d;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: cloud-bg-d;
+  -moz-animation-duration: 10s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-name: cloud-bg-d;
+  -ms-animation-duration: 10s;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-direction: normal;
+  -ms-animation-delay: 0;
+  -ms-animation-play-state: running;
+  -ms-animation-fill-mode: forwards;
+  animation-name: cloud-bg-d;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 0;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cloud-bg-d {
+  /* line 322, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 326, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 100px;
+  }
+}
+
+@-moz-keyframes cloud-bg-d {
+  /* line 332, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 336, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 100px;
+  }
+}
+
+@-ms-keyframes cloud-bg-d {
+  /* line 342, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 346, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 100px;
+  }
+}
+
+@keyframes cloud-bg-d {
+  /* line 352, ../../src/css/_parallax-balloon.scss */
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  /* line 356, ../../src/css/_parallax-balloon.scss */
+  100% {
+    top: 0;
+    left: 100px;
+  }
+}
 
 /* sprites */
-/* line 53, ../../src/css/_parallax-balloon.scss */
+/* line 365, ../../src/css/_parallax-balloon.scss */
 .parallax-balloon-bg .sprites {
   background-image: url('../../images/parallax/balloon-sprites-xs.png?1391653547');
   background-repeat: no-repeat;
@@ -1016,7 +1471,7 @@ header {
   position: absolute;
 }
 
-/* line 60, ../../src/css/_parallax-balloon.scss */
+/* line 372, ../../src/css/_parallax-balloon.scss */
 .balloon {
   width: 180px;
   height: 258px;
@@ -1025,94 +1480,94 @@ header {
   left: 115px;
 }
 
-/* line 68, ../../src/css/_parallax-balloon.scss */
+/* line 380, ../../src/css/_parallax-balloon.scss */
 .cloud-lg {
   width: 166px;
   height: 45px;
   background-position: left -258px;
 }
 
-/* line 73, ../../src/css/_parallax-balloon.scss */
+/* line 385, ../../src/css/_parallax-balloon.scss */
 .cloud-md {
   width: 107px;
   height: 36px;
   background-position: left -303px;
 }
 
-/* line 78, ../../src/css/_parallax-balloon.scss */
+/* line 390, ../../src/css/_parallax-balloon.scss */
 .cloud-sm {
   width: 55px;
   height: 16px;
   background-position: -107px -303px;
 }
 
-/* line 83, ../../src/css/_parallax-balloon.scss */
+/* line 395, ../../src/css/_parallax-balloon.scss */
 .cloud-lg-a {
   top: 118px;
   left: 400px;
 }
 
-/* line 87, ../../src/css/_parallax-balloon.scss */
+/* line 399, ../../src/css/_parallax-balloon.scss */
 .cloud-lg-b {
   top: 305px;
   left: 30px;
 }
 
-/* line 91, ../../src/css/_parallax-balloon.scss */
+/* line 403, ../../src/css/_parallax-balloon.scss */
 .cloud-md-a {
   top: 150px;
   left: 236px;
 }
 
-/* line 95, ../../src/css/_parallax-balloon.scss */
+/* line 407, ../../src/css/_parallax-balloon.scss */
 .cloud-md-b {
   top: 265px;
   left: 542px;
 }
 
-/* line 99, ../../src/css/_parallax-balloon.scss */
+/* line 411, ../../src/css/_parallax-balloon.scss */
 .cloud-md-c {
   top: 250px;
   left: 1375px;
 }
 
-/* line 103, ../../src/css/_parallax-balloon.scss */
+/* line 415, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-a {
   top: 129px;
   left: 10px;
 }
 
-/* line 107, ../../src/css/_parallax-balloon.scss */
+/* line 419, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-b {
   top: 331px;
   left: 401px;
 }
 
-/* line 111, ../../src/css/_parallax-balloon.scss */
+/* line 423, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-c {
   top: 300px;
   left: 75px;
 }
 
-/* line 115, ../../src/css/_parallax-balloon.scss */
+/* line 427, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-d {
   top: 26px;
   left: 400px;
 }
 
-/* line 119, ../../src/css/_parallax-balloon.scss */
+/* line 431, ../../src/css/_parallax-balloon.scss */
 .cloud-sm-e {
   top: 100px;
   left: 1575px;
 }
 
 @media (min-width: 768px) {
-  /* line 125, ../../src/css/_parallax-balloon.scss */
+  /* line 437, ../../src/css/_parallax-balloon.scss */
   .parallax-balloon-bg .sprites {
     background-image: url('../../images/parallax/balloon-sprites.png?1391653547');
   }
 
-  /* line 128, ../../src/css/_parallax-balloon.scss */
+  /* line 440, ../../src/css/_parallax-balloon.scss */
   .balloon {
     width: 529px;
     height: 753px;
@@ -1120,70 +1575,70 @@ header {
     left: 52%;
   }
 
-  /* line 134, ../../src/css/_parallax-balloon.scss */
+  /* line 446, ../../src/css/_parallax-balloon.scss */
   .cloud-lg {
     width: 488px;
     height: 138px;
     background-position: left -757px;
   }
 
-  /* line 139, ../../src/css/_parallax-balloon.scss */
+  /* line 451, ../../src/css/_parallax-balloon.scss */
   .cloud-md {
     width: 311px;
     height: 105px;
     background-position: left -895px;
   }
 
-  /* line 144, ../../src/css/_parallax-balloon.scss */
+  /* line 456, ../../src/css/_parallax-balloon.scss */
   .cloud-sm {
     width: 160px;
     height: 48px;
     background-position: -311px -895px;
   }
 
-  /* line 149, ../../src/css/_parallax-balloon.scss */
+  /* line 461, ../../src/css/_parallax-balloon.scss */
   .cloud-lg-a {
     top: 118px;
     left: 76%;
   }
 
-  /* line 153, ../../src/css/_parallax-balloon.scss */
+  /* line 465, ../../src/css/_parallax-balloon.scss */
   .cloud-lg-b {
-    top: 343px;
+    top: 305px;
     left: 21%;
   }
 
-  /* line 157, ../../src/css/_parallax-balloon.scss */
+  /* line 469, ../../src/css/_parallax-balloon.scss */
   .cloud-md-a {
     top: 150px;
     left: -6%;
   }
 
-  /* line 161, ../../src/css/_parallax-balloon.scss */
+  /* line 473, ../../src/css/_parallax-balloon.scss */
   .cloud-md-b {
     top: 65px;
     left: 42%;
   }
 
-  /* line 165, ../../src/css/_parallax-balloon.scss */
+  /* line 477, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-a {
     top: 79px;
     left: 12%;
   }
 
-  /* line 169, ../../src/css/_parallax-balloon.scss */
+  /* line 481, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-b {
     top: 331px;
     left: 92%;
   }
 
-  /* line 173, ../../src/css/_parallax-balloon.scss */
+  /* line 485, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-c {
     top: 343px;
     left: -8%;
   }
 
-  /* line 177, ../../src/css/_parallax-balloon.scss */
+  /* line 489, ../../src/css/_parallax-balloon.scss */
   .cloud-sm-d {
     top: 26px;
     left: 107%;

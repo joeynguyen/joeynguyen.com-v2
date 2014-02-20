@@ -1,36 +1,33 @@
 $(document).ready(function() {
     // Enable Balloon animation	
+    // $("#animate-balloon").click( function() {
+    // 	var balloonA = $("#parallax-balloon-bg-a");
+    // 	var balloonB = $("#parallax-balloon-bg-b");
+    // 	var balloonC = $("#parallax-balloon-bg-c");
+    // 	var balloonD = $("#parallax-balloon-bg-d");
+    // 	TweenLite.to(balloonA, 10, {left:"+=532px"});
+    // 	TweenLite.to(balloonB, 10, {top:"-=860px"});
+    // 	TweenLite.to(balloonC, 10, {left:"+=332px"});
+    // 	TweenLite.to(balloonD, 10, {left:"+=132px"});
+    // 	$(this).fadeOut();
+    // });
     $("#animate-balloon").click(function() {
-        var balloonA = $("#parallax-balloon-bg-a");
-        var balloonB = $("#parallax-balloon-bg-b");
-        var balloonC = $("#parallax-balloon-bg-c");
-        var balloonD = $("#parallax-balloon-bg-d");
-        TweenLite.to(balloonA, 10, {
-            left: "+=532px"
-        });
-        TweenLite.to(balloonB, 10, {
-            top: "-=860px"
-        });
-        TweenLite.to(balloonC, 10, {
-            left: "+=332px"
-        });
-        TweenLite.to(balloonD, 10, {
-            left: "+=132px"
-        });
+        $("div.parallax-balloon-bg").addClass("animate");
         $(this).fadeOut();
     });
-    // Fly Turtle Fly!
-    $turtle = $("#turtle");
-    function moveTurtle() {
-        $turtle.css("top", parseInt($turtle.css("top")) - 1 + "px");
-    }
-    $turtleFly = setInterval(function() {
-        $turtlePosition = parseInt($turtle.css("top"));
-        moveTurtle();
-        if ($turtlePosition === 0) {
-            clearInterval($turtleFly);
-        }
-    }, 50);
+    // // Fly Turtle Fly!
+    // $turtle = $('#turtle');
+    // function moveTurtle() {
+    // 	$turtle.css('top', ( parseInt($turtle.css('top')) - 1) + 'px');
+    // }
+    // $turtleFly = setInterval(function() {
+    //   $turtlePosition = parseInt($turtle.css('top'));
+    //   moveTurtle();
+    //   if ($turtlePosition === 0) {
+    //     clearInterval($turtleFly);
+    //   }
+    //  // $('#alert2').text( $turtlePosition );
+    // }, 50);
     // Navigation links click scroll page
     navigationScroll();
     // Enable Navigation dropdown transformations
@@ -167,25 +164,26 @@ Modernizr.load([ // Presentational polyfills
     complete: function() {
         // Run this after everything in this group has downloaded
         // and executed, as well everything in all previous groups
+        $("html.touch #animate-balloon").empty().append("Tap to Animate");
+        $("html.touch .progress-bar, html.touch .progress-bar-label").addClass("active");
         // Enable Parallax
         $.stellar({});
         // Hide Skill Boxes
-        $skillBoxes = $("#page-skills .skill-box");
+        $skillBoxes = $("html.no-touch #page-skills .skill-box");
         $skillBoxes.addClass("fade");
         $(window).on("scroll", function() {
             /* Activate Skills Animation */
             if ($window_top >= $parallaxBalloonHeight + 145) {
-                $(".progress-bar").addClass("active");
-                $(".progress-bar-label").addClass("active");
+                $("html.no-touch .progress-bar").addClass("active");
+                $("html.no-touch .progress-bar-label").addClass("active");
             } else {
-                $(".progress-bar").removeClass("active");
-                $(".progress-bar-label").removeClass("active");
+                $("html.no-touch .progress-bar").removeClass("active");
+                $("html.no-touch .progress-bar-label").removeClass("active");
             }
         });
     }
 } ]);
 
-if (Modernizr.touch) {
-    $(".progress-bar, .progress-bar-label").addClass("active");
-    $("#animate-balloon").empty().append("Tap to Animate");
+if (!Modernizr.cssanimations) {
+    $("#animate-balloon").hide();
 }

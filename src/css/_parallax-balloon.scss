@@ -7,13 +7,16 @@
 .animate-balloon {
 	position: absolute;
 	top: 20px;
-	left: 49%;
+	left: 50%;
 	background: transparent;
 	padding: 5px;
 	border: 1px solid #414141;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+	box-sizing: border-box;
+	width: 114px;
+	margin-left: -57px;
 	z-index: 1000;
 }
 
@@ -22,6 +25,7 @@
 	background: #e3e5e5;
 	z-index: 1000;
 }
+
 .parallax-balloon-bg {
 	position: absolute;
 	top: 0;
@@ -31,22 +35,330 @@
 #parallax-balloon-bg-a {
 	z-index: 4;
 
+
+	&.animate {
+		-webkit-animation-name: cloud-bg-a;
+		-webkit-animation-duration: 10s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-delay: 0;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation-name: cloud-bg-a;
+		-moz-animation-duration: 10s;
+		-moz-animation-timing-function: linear;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-direction: normal;
+		-moz-animation-delay: 0;
+		-moz-animation-play-state: running;
+		-moz-animation-fill-mode: forwards;
+		-ms-animation-name: cloud-bg-a;
+		-ms-animation-duration: 10s;
+		-ms-animation-timing-function: linear;
+		-ms-animation-iteration-count: 1;
+		-ms-animation-direction: normal;
+		-ms-animation-delay: 0;
+		-ms-animation-play-state: running;
+		-ms-animation-fill-mode: forwards;	
+		animation-name: cloud-bg-a;
+		animation-duration: 10s;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;	
+		animation-direction: normal;
+		animation-delay: 0;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+
+}
+
+	@-webkit-keyframes cloud-bg-a {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 600px;
+		}
+	}
+	@-moz-keyframes cloud-bg-a {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 600px;
+		}
+	}
+	@-ms-keyframes cloud-bg-a {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 600px;
+		}
+	}
+	@keyframes cloud-bg-a {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 600px;
+		}
 	}
 
 /* foreground (balloon) */
 #parallax-balloon-bg-b {
 	z-index: 3;
+
+	&.animate {
+		-webkit-animation-name: balloon;
+		-webkit-animation-duration: 10s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-delay: 0;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation-name: balloon;
+		-moz-animation-duration: 10s;
+		-moz-animation-timing-function: linear;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-direction: normal;
+		-moz-animation-delay: 0;
+		-moz-animation-play-state: running;
+		-moz-animation-fill-mode: forwards;
+		-ms-animation-name: balloon;
+		-ms-animation-duration: 10s;
+		-ms-animation-timing-function: linear;
+		-ms-animation-iteration-count: 1;
+		-ms-animation-direction: normal;
+		-ms-animation-delay: 0;
+		-ms-animation-play-state: running;
+		-ms-animation-fill-mode: forwards;	
+		animation-name: balloon;
+		animation-duration: 10s;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;	
+		animation-direction: normal;
+		animation-delay: 0;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+
 }
+	@-webkit-keyframes balloon {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: -900px;
+			left: 200px;
+		}
+	}
+	@-moz-keyframes balloon {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: -900px;
+			left: 200px;
+		}
+	}
+	@-ms-keyframes balloon {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: -900px;
+			left: 200px;
+		}
+	}
+	@keyframes balloon {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: -900px;
+			left: 200px;
+		}
+	}
 
 /* midground (clouds) */
 #parallax-balloon-bg-c {
 	z-index: 2;
+
+	&.animate {
+		-webkit-animation-name: cloud-bg-c;
+		-webkit-animation-duration: 10s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-delay: 0;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation-name: cloud-bg-c;
+		-moz-animation-duration: 10s;
+		-moz-animation-timing-function: linear;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-direction: normal;
+		-moz-animation-delay: 0;
+		-moz-animation-play-state: running;
+		-moz-animation-fill-mode: forwards;
+		-ms-animation-name: cloud-bg-c;
+		-ms-animation-duration: 10s;
+		-ms-animation-timing-function: linear;
+		-ms-animation-iteration-count: 1;
+		-ms-animation-direction: normal;
+		-ms-animation-delay: 0;
+		-ms-animation-play-state: running;
+		-ms-animation-fill-mode: forwards;	
+		animation-name: cloud-bg-c;
+		animation-duration: 10s;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;	
+		animation-direction: normal;
+		animation-delay: 0;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+
 }
+
+	@-webkit-keyframes cloud-bg-c {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 200px;
+		}
+	}
+	@-moz-keyframes cloud-bg-c {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 200px;
+		}
+	}
+	@-ms-keyframes cloud-bg-c {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 200px;
+		}
+	}
+	@keyframes cloud-bg-c {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 200px;
+		}
+	}
 
 /* background (clouds) */
 #parallax-balloon-bg-d {
 	z-index: 1;
+
+	&.animate {
+		-webkit-animation-name: cloud-bg-d;
+		-webkit-animation-duration: 10s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-delay: 0;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation-name: cloud-bg-d;
+		-moz-animation-duration: 10s;
+		-moz-animation-timing-function: linear;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-direction: normal;
+		-moz-animation-delay: 0;
+		-moz-animation-play-state: running;
+		-moz-animation-fill-mode: forwards;
+		-ms-animation-name: cloud-bg-d;
+		-ms-animation-duration: 10s;
+		-ms-animation-timing-function: linear;
+		-ms-animation-iteration-count: 1;
+		-ms-animation-direction: normal;
+		-ms-animation-delay: 0;
+		-ms-animation-play-state: running;
+		-ms-animation-fill-mode: forwards;	
+		animation-name: cloud-bg-d;
+		animation-duration: 10s;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;	
+		animation-direction: normal;
+		animation-delay: 0;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+
 }
+
+	@-webkit-keyframes cloud-bg-d {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 100px;
+		}
+	}
+	@-moz-keyframes cloud-bg-d {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 100px;
+		}
+	}
+	@-ms-keyframes cloud-bg-d {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 100px;
+		}
+	}
+	@keyframes cloud-bg-d {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		100% {
+			top: 0;
+			left: 100px;
+		}
+	}
+
 
 
 /* sprites */
@@ -151,7 +463,7 @@
 		left: 76%;		
 	}
 	.cloud-lg-b {
-		top: 343px;
+		top: 305px;
 		left: 21%;
 	}
 	.cloud-md-a {

@@ -94,7 +94,79 @@ z-index: 10;
 	top: 3000px;
 	width: 49px;
 	height: 80px;
+		-webkit-animation-name: turtle;
+		-webkit-animation-duration: 60s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-delay: 0;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation-name: turtle;
+		-moz-animation-duration: 60s;
+		-moz-animation-timing-function: linear;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-direction: normal;
+		-moz-animation-delay: 0;
+		-moz-animation-play-state: running;
+		-moz-animation-fill-mode: forwards;
+		-ms-animation-name: turtle;
+		-ms-animation-duration: 60s;
+		-ms-animation-timing-function: linear;
+		-ms-animation-iteration-count: 1;
+		-ms-animation-direction: normal;
+		-ms-animation-delay: 0;
+		-ms-animation-play-state: running;
+		-ms-animation-fill-mode: forwards;	
+		animation-name: turtle;
+		animation-duration: 60s;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;	
+		animation-direction: normal;
+		animation-delay: 0;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
 }
+	@-webkit-keyframes turtle {
+		0% {
+			top: 3000px;
+			left: 0;
+		}
+		100% {
+			top: 0px;
+			left: 0;
+		}
+	}
+	@-moz-keyframes turtle {
+		0% {
+			top: 3000px;
+			left: 0;
+		}
+		100% {
+			top: 0px;
+			left: 0;
+		}
+	}
+	@-ms-keyframes turtle {
+		0% {
+			top: 3000px;
+			left: 0;
+		}
+		100% {
+			top: 0px;
+			left: 0;
+		}
+	}
+	@keyframes turtle {
+		0% {
+			top: 3000px;
+			left: 0;
+		}
+		100% {
+			top: 0px;
+			left: 0;
+		}
+	}
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 	.turtle {
 		background-image: image-url('turtle@2x.png');

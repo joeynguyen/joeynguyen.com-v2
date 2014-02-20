@@ -40,6 +40,13 @@ module.exports = function(grunt) {
 //					importPath: '../templates/common/css/',
 					environment: 'production'
 				}
+			},
+			bootstrap: {
+				options: {
+					sassDir: 'src/bootstrap/sass',
+					cssDir: 'css',
+					environment: 'production'
+				}
 			}
 		},
 

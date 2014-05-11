@@ -1,366 +1,379 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Website of Joey Nguyen, Web Developer and Devourer of all the Ice Cream</title>
-	<link rel="stylesheet" href="css/bootstrap.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy|Oswald' rel='stylesheet' type='text/css'>
-	<script type="text/javascript">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website of Joey Nguyen, Web Developer and Devourer of all the Ice Cream</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy|Oswald' rel='stylesheet' type='text/css'>
+    <!-- Pingdom Real User Monitoring -->
+    <script>
+    var _prum = [['id', '536a5468abe53d5306b25d7c'],
+                 ['mark', 'firstbyte', (new Date()).getTime()]];
+    (function() {
+        var s = document.getElementsByTagName('script')[0]
+          , p = document.createElement('script');
+        p.async = 'async';
+        p.src = '//rum-static.pingdom.net/prum.min.js';
+        s.parentNode.insertBefore(p, s);
+    })();
+    </script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-22848919-3']);
-	  _gaq.push(['_setDomainName', '.joeynguyen.com']);
-	  _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22848919-3']);
+      _gaq.push(['_setDomainName', '.joeynguyen.com']);
+      _gaq.push(['_trackPageview']);
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-	</script>
+    </script>
 </head>
 <body>
-	<div id="site" class="site">
+    <div id="site" class="site">
 
-		<div id="page-top"></div>
+        <div id="page-top"></div>
 
-		<div id="parallax-balloon" class="parallax-window-balloon-outer parallax-window-balloon">
-			<button id="animate-balloon" class="animate-balloon">Click to Animate</button>
-			<!-- Parallax foreground clouds -->
+        <div id="parallax-balloon" class="parallax-window-balloon-outer parallax-window-balloon">
+            <button id="animate-balloon" class="animate-balloon">Click to Animate</button>
+            <!-- Parallax foreground clouds -->
 
-			<div id="parallax-balloon-bg-a" class="parallax-balloon-bg container">
-				<div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
-					<div class="sprites cloud-lg cloud-lg-a"></div>
-					<div class="sprites cloud-lg cloud-lg-b"></div>
-				</div>
-			</div>
-						
-			<!-- Parallax foreground balloon -->
+            <div id="parallax-balloon-bg-a" class="parallax-balloon-bg container">
+                <div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
+                    <div class="sprites cloud-lg cloud-lg-a"></div>
+                    <div class="sprites cloud-lg cloud-lg-b"></div>
+                </div>
+            </div>
 
-			<div id="parallax-balloon-bg-b" class="parallax-balloon-bg container">
-				<div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
-					<div class="sprites balloon"></div>
-				</div>
-			</div>
+            <!-- Parallax foreground balloon -->
 
-			<!-- Parallax midground clouds -->
+            <div id="parallax-balloon-bg-b" class="parallax-balloon-bg container">
+                <div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
+                    <div class="sprites balloon"></div>
+                </div>
+            </div>
 
-			<div id="parallax-balloon-bg-c" class="parallax-balloon-bg container">
-				<div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
-					<div class="sprites cloud-md cloud-md-a"></div>
-					<div class="sprites cloud-md cloud-md-b"></div>
-					<div class="sprites cloud-md cloud-md-c"></div>
-				</div>
-			</div>
+            <!-- Parallax midground clouds -->
 
-			<!-- Parallax background clouds -->
+            <div id="parallax-balloon-bg-c" class="parallax-balloon-bg container">
+                <div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
+                    <div class="sprites cloud-md cloud-md-a"></div>
+                    <div class="sprites cloud-md cloud-md-b"></div>
+                    <div class="sprites cloud-md cloud-md-c"></div>
+                </div>
+            </div>
 
-			<div id="parallax-balloon-bg-d" class="parallax-balloon-bg container">
-				<div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
-					<div class="sprites cloud-sm cloud-sm-a"></div>
-					<div class="sprites cloud-sm cloud-sm-b"></div>
-					<div class="sprites cloud-sm cloud-sm-c"></div>
-					<div class="sprites cloud-sm cloud-sm-d"></div>
-					<div class="sprites cloud-sm cloud-sm-e"></div>
-				</div>
-			</div>
+            <!-- Parallax background clouds -->
 
-		</div>
+            <div id="parallax-balloon-bg-d" class="parallax-balloon-bg container">
+                <div class="col-xs-12 col-sm-10 col-md-12 col-lg-12">
+                    <div class="sprites cloud-sm cloud-sm-a"></div>
+                    <div class="sprites cloud-sm cloud-sm-b"></div>
+                    <div class="sprites cloud-sm cloud-sm-c"></div>
+                    <div class="sprites cloud-sm cloud-sm-d"></div>
+                    <div class="sprites cloud-sm cloud-sm-e"></div>
+                </div>
+            </div>
 
-		<header>
+        </div>
 
-			<div id="menu" class="navigation wide">
-				<div id="navigation-elements-wrapper">
-					<div class="navigation-header">
-						<div class="logo">
-							<h1><a id="logoButton" class="active-wide" href="#top"><span class="first-name">Joey</span> <span class="last-name">Nguyen</span><br /><span class="glyphicon glyphicon-chevron-down"></span></a></h1>
-						</div>
-					</div>
+        <header>
 
-					<ul id="navigation-nav" class="navigation-nav">
-						<li><a id="nav-top" href="#top"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-						<li><a id="nav-about" href="#page-about"><span class="glyphicon glyphicon-user"></span>About</a></li>
-						<li><a id="nav-skills" href="#page-skills"><span class="glyphicon glyphicon-fire"></span>Skills</a></li>
-						<li><a id="nav-contact" href="#page-contact"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
-						<li><a id="nav-work" href="#page-work"><span class="glyphicon glyphicon-briefcase"></span>Work</a></li>
-					</ul>
-				</div>
-			</div>
-		</header>
+            <div id="menu" class="navigation wide">
+                <div id="navigation-elements-wrapper">
+                    <div class="navigation-header">
+                        <div class="logo">
+                            <h1><a id="logoButton" class="active-wide" href="#top"><span class="first-name">Joey</span> <span class="last-name">Nguyen</span><br /><span class="glyphicon glyphicon-chevron-down"></span></a></h1>
+                        </div>
+                    </div>
 
-		<section id="main-content-1" class="main-content container">
-			
-			<div class="row">
-				<div id="page-about" class="page page-about">
-				
-					<div class="page-header">
-						<div class="header-sprite header-sprite-about"></div>
-						<h2>About Me</h2>
-						<h3>Coder of the Web and Devourer of all the Ice Cream</h3>
-					</div>
-					
-					<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 about-text">
-						<p>Hi, I'm Joey Nguyen. Welcome to my personal website! I'm currently a front end web developer at Dealertrack Technologies in Dallas, TX. While creating consumer-facing websites is what I've done most of my career, I've recently switched to a new role where I'm working on a team that's building better back end tools for business customers, following the Agile (Scrum) methodology. A couple quirks about me: I'm a big fan of standing desks and mechanical keyboards.</p>
-					</div>
-					
-					<div id="skillLevel" class="skill-level col-sm-6 col-md-6 col-lg-5 col-lg-offset-0">
-						<div class="progress">
-							<div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-								<span class="sr-only">80% Expertise</span>
-							</div>
-							<div class="progress-bar-label">Photoshop Slicing</div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-								<span class="sr-only">90% Expertise</span>
-							</div>
-							<div class="progress-bar-label">Command Line</div>
-							</div>
-						<div class="progress">
-							<div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-								<span class="sr-only">50% Expertise</span>
-							</div>
-							<div class="progress-bar-label">Programming</div>
-							</div>
-						<div class="progress">
-							  <div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-									<span class="sr-only">70% Expertise</span>
-							  </div>
-							  <div class="progress-bar-label">Workflow Automation</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
+                    <ul id="navigation-nav" class="navigation-nav">
+                        <li><a id="nav-top" href="#top"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                        <li><a id="nav-about" href="#page-about"><span class="glyphicon glyphicon-user"></span>About</a></li>
+                        <li><a id="nav-skills" href="#page-skills"><span class="glyphicon glyphicon-fire"></span>Skills</a></li>
+                        <li><a id="nav-contact" href="#page-contact"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+                        <li><a id="nav-work" href="#page-work"><span class="glyphicon glyphicon-briefcase"></span>Work</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
-		</section>
+        <section id="main-content-1" class="main-content container">
 
-		<div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
-			<div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
-		</div>
+            <div class="row">
+                <div id="page-about" class="page page-about">
 
-		<section id="parallax-first" class="parallax-window parallax-window-first hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
-			<div class="article-outer-box">
-				<div class="article-middle-box">
-					<div class="article-inner-box">
-						<div class="article-decoration"></div>
-						<article>The more I live, the more I learn. The more I learn, the more I realize, the less I know. <br />
-							<span>- Michel Legrand</span>
-						</article>
-					</div>
-				</div>
-			</div>
-		</section>
+                    <div class="page-header">
+                        <div class="header-sprite header-sprite-about"></div>
+                        <h2>About Me</h2>
+                        <h3>Coder of the Web and Devourer of all the Ice Cream</h3>
+                    </div>
 
-		<section id="main-content-2" class="main-content container">
-			<div class="row">
-				<div id="page-skills" class="page page-skills">
-				
-					<div class="page-header">
-						<div class="header-sprite header-sprite-skills"></div>
-						<h2>Skills</h2>
-						<h3>I Can Do Stuff</h3>
-					</div>
-					
-					<div class="col-sm-12 col-md-10 col-md-offset-1">
-						<div class="col-sm-4">
-						
-							<div class="skill-box skill-box-top skill-box-first">
-								<p><span class="glyphicon glyphicon-book"></span></p>
-								<p class="skill-title" href="#">Languages</p>
-								<p>HTML</p>
-								<p>CSS</p>
-								<p>jQuery</p>
-								<p>Template Toolkit</p>
-								<p>PHP</p>
-								<p>Python</p>
-							</div>
-							<div class="skill-box">
-								<p><span class="glyphicon glyphicon-wrench"></span></p>
-								<p class="skill-title" href="#">Server Administration</p>
-								<p>Ubuntu Linux</p>
-								<p>Bash</p>
-								<p>SSH,SCP,SFTP</p>
-								<p>Apache</p>
-								<p>SSL Certificates</p>
-								<p>Log Analysis</p>
-								<p>DNS Records</p>
-							</div>
-						
-						</div>
-						<div class="col-sm-4">
-							<div class="skill-box skill-box-top">
-								<p><span class="glyphicon glyphicon-phone"></span></p>
-								<p class="skill-title" href="#">Front End Techniques</p>
-								<p>Responsive Web</p>
-								<p>Mobile First</p>
-								<p>Progressive Enhancement</p>
-								<p>Parallax</p>
-							</div>
-							<div class="skill-box">
-								<p><span class="glyphicon glyphicon-transfer"></span></p>
-								<p class="skill-title" href="#">Version Control</p>
-								<p>Subversion</p>
-								<p>Git</p>
-							</div>
-							<div class="skill-box">
-								<p><span class="glyphicon glyphicon-cog"></span></p>
-								<p class="skill-title" href="#">Website Management</p>
-								<p>SEO</p>
-								<p>Google Analytics</p>
-								<p>Wordpress</p>
-								<p>Drupal</p>
-								<p>SugarCRM</p>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="skill-box skill-box-top">
-								<p><span class="glyphicon glyphicon-pencil"></span></p>
-								<p class="skill-title" href="#">Text Editors</p>
-								<p>Vim</p>
-								<p>Sublime Text 3</p>
-								<p>Coda</p>
-							</div>
-							<div class="skill-box">
-								<p><span class="glyphicon glyphicon-random"></span></p>
-								<p class="skill-title" href="#">Workflow Automation</p>
-								<p>Yeoman:</p>
-								<p>project scaffolding</p>
-								<p>Grunt:</p>
-								<p>Javascript linting</p>
-								<p>image optimization</p>
-								<p>file concatenation</p>
-								<p>file minification</p>
-								<p>SASS: Compass</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                    <div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 about-text">
+                        <p>Hi, I'm Joey Nguyen. Welcome to my personal website! I'm currently a front end web developer at Dealertrack Technologies in Dallas, TX. While creating consumer-facing websites is what I've done most of my career, I've recently switched to a new role where I'm working on a team that's building better back end tools for business customers, following the Agile (Scrum) methodology. A couple quirks about me: I'm a big fan of standing desks and mechanical keyboards.</p>
+                    </div>
 
-		<div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
-			<div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
-		</div>
+                    <div id="skillLevel" class="skill-level col-sm-6 col-md-6 col-lg-5 col-lg-offset-0">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <span class="sr-only">80% Expertise</span>
+                            </div>
+                            <div class="progress-bar-label">Photoshop Slicing</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                <span class="sr-only">90% Expertise</span>
+                            </div>
+                            <div class="progress-bar-label">Command Line</div>
+                            </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                <span class="sr-only">50% Expertise</span>
+                            </div>
+                            <div class="progress-bar-label">Programming</div>
+                            </div>
+                        <div class="progress">
+                              <div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                    <span class="sr-only">70% Expertise</span>
+                              </div>
+                              <div class="progress-bar-label">Workflow Automation</div>
+                        </div>
+                    </div>
 
-		<section id="parallax-second" class="parallax-window parallax-window-second hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
-			<article>The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less. <br />- Socrates</article>
-		</section>
+                </div>
+            </div>
 
-		<section id="main-content-3" class="main-content container">
+        </section>
 
-			<div class="row">
-				<div id="page-contact" class="page page-contact">
-				
-					<div class="page-header">
-						<div class="header-sprite header-sprite-contact"></div>
-						<h2>Contact</h2>
-						<h3>Questions/Comments?</h3>
-					</div>
-					
-					<div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
-						<p>You can reach me by email at: contact(at)joeynguyen.com.</p>
-					</div>
+        <div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
+            <div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
+        </div>
 
-				</div>
-			</div>
+        <section id="parallax-first" class="parallax-window parallax-window-first hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
+            <div class="article-outer-box">
+                <div class="article-middle-box">
+                    <div class="article-inner-box">
+                        <div class="article-decoration"></div>
+                        <article>The more I live, the more I learn. The more I learn, the more I realize, the less I know. <br />
+                            <span>- Michel Legrand</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		</section>
+        <section id="main-content-2" class="main-content container">
+            <div class="row">
+                <div id="page-skills" class="page page-skills">
 
-		<div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
-			<div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
-		</div>
+                    <div class="page-header">
+                        <div class="header-sprite header-sprite-skills"></div>
+                        <h2>Skills</h2>
+                        <h3>I Can Do Stuff</h3>
+                    </div>
 
-		<section id="parallax-third" class="parallax-window parallax-window-third hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
-			<article><span>CREDITS</span><br />
-				<a href="http://f6design.com/">Jonathan Nicol</a> for the hot air balloon image.<br />
-				<a href="http://coverphotofinder.com/profile/1461953431">John Bishop</a> for the thundercloud image.<br />
-				<a href="http://www.flickr.com/photos/achew/">Tian Chew Lim</a> for the Amazon box robots image.<br />
-				Whoever created the computer internal hardware image (sorry couldn't find author).
-			</article>
-		</section>
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <div class="col-sm-4">
 
-		<section id="main-content-4" class="main-content container">
+                            <div class="skill-box skill-box-top skill-box-first">
+                                <p><span class="glyphicon glyphicon-book"></span></p>
+                                <p class="skill-title" href="#">Languages</p>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>jQuery</p>
+                                <p>Template Toolkit</p>
+                                <p>PHP</p>
+                                <p>Python</p>
+                            </div>
+                            <div class="skill-box">
+                                <p><span class="glyphicon glyphicon-wrench"></span></p>
+                                <p class="skill-title" href="#">Server Administration</p>
+                                <p>Ubuntu Linux</p>
+                                <p>Bash</p>
+                                <p>SSH,SCP,SFTP</p>
+                                <p>Apache</p>
+                                <p>SSL Certificates</p>
+                                <p>Log Analysis</p>
+                                <p>DNS Records</p>
+                            </div>
 
-			<div class="row">
-				<div id="page-work" class="page page-work">
-				
-					<div class="page-header">
-						<div class="header-sprite header-sprite-work"></div>
-						<h2>Work</h2>
-						<h3>These look strangely familiar...</h3>
-					</div>
-					
-					<div class="work-site-list row">
-						<div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
-							<div class="work-img-column work-img-column-left">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-									<div class="work-img work-img-1" title="item-orr" data-target="#work-slideshow" data-slide-to="0"></div>
-								</div>
-							</div>
-							<div class="work-img-column work-img-column-middle">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-									<div class="work-img work-img-3" title="item-lonestar" data-target="#work-slideshow" data-slide-to="1"></div>
-								</div>
-							</div>
-							<div class="work-img-column work-img-column-right">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-									<div class="work-img work-img-2" title="item-sewell" data-target="#work-slideshow" data-slide-to="2"></div>
-								</div>
-							</div>
-							<div class="ribbon-row">
-								<div class="col-sm-12">
-									<div class="ribbon"></div>
-								</div>
-							</div>
-						</div>
-					</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="skill-box skill-box-top">
+                                <p><span class="glyphicon glyphicon-phone"></span></p>
+                                <p class="skill-title" href="#">Front End Techniques</p>
+                                <p>Responsive Web</p>
+                                <p>Mobile First</p>
+                                <p>Progressive Enhancement</p>
+                                <p>Parallax</p>
+                            </div>
+                            <div class="skill-box">
+                                <p><span class="glyphicon glyphicon-transfer"></span></p>
+                                <p class="skill-title" href="#">Version Control</p>
+                                <p>Subversion</p>
+                                <p>Git</p>
+                            </div>
+                            <div class="skill-box">
+                                <p><span class="glyphicon glyphicon-cog"></span></p>
+                                <p class="skill-title" href="#">Website Management</p>
+                                <p>SEO</p>
+                                <p>Google Analytics</p>
+                                <p>Wordpress</p>
+                                <p>Drupal</p>
+                                <p>SugarCRM</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="skill-box skill-box-top">
+                                <p><span class="glyphicon glyphicon-pencil"></span></p>
+                                <p class="skill-title" href="#">Text Editors</p>
+                                <p>Vim</p>
+                                <p>Sublime Text 3</p>
+                                <p>Coda</p>
+                            </div>
+                            <div class="skill-box">
+                                <p><span class="glyphicon glyphicon-random"></span></p>
+                                <p class="skill-title" href="#">Workflow Automation</p>
+                                <p>Yeoman:</p>
+                                <p>project scaffolding</p>
+                                <p>Grunt:</p>
+                                <p>Javascript linting</p>
+                                <p>image optimization</p>
+                                <p>file concatenation</p>
+                                <p>file minification</p>
+                                <p>SASS: Compass</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<div id="work-slideshow" class="work-slideshow carousel slide row" data-interval="false">
+        <div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
+            <div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
+        </div>
 
-						<div class="col-sm-12 col-lg-10 col-lg-offset-1">
-							<div class="slideshow-controls-outer">
-								<a href="#work-slideshow" class="slideshow-controls slideshow-controls-left" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a>
-								<a href="#" class="slideshow-controls slideshow-controls-close" id="slideshow-controls-close" ><span class="glyphicon glyphicon-remove-circle"></span></a>
-								<a href="#work-slideshow" class="slideshow-controls slideshow-controls-right" data-slide="next">Next <span class="glyphicon glyphicon-chevron-right"></span></a>
-							</div>
-						</div>
-						<div class="col-sm-12 col-lg-10 col-lg-offset-1">
-							<div id="carousel-inner" class="carousel-inner">
+        <section id="parallax-second" class="parallax-window parallax-window-second hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
+            <article>The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less. <br />- Socrates</article>
+        </section>
 
-							</div>
-						</div>
+        <section id="main-content-3" class="main-content container">
 
-					</div>
+            <div class="row">
+                <div id="page-contact" class="page page-contact">
 
-				</div>
-			</div>
+                    <div class="page-header">
+                        <div class="header-sprite header-sprite-contact"></div>
+                        <h2>Contact</h2>
+                        <h3>Questions/Comments?</h3>
+                    </div>
 
-		</section>
+                    <div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+                        <p>You can reach me by email at: contact(at)joeynguyen.com.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
+            <div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
+        </div>
+
+        <section id="parallax-third" class="parallax-window parallax-window-third hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
+            <article><span>CREDITS</span><br />
+                <a href="http://f6design.com/">Jonathan Nicol</a> for the hot air balloon image.<br />
+                <a href="http://coverphotofinder.com/profile/1461953431">John Bishop</a> for the thundercloud image.<br />
+                <a href="http://www.flickr.com/photos/achew/">Tian Chew Lim</a> for the Amazon box robots image.<br />
+                Whoever created the computer internal hardware image (sorry couldn't find author).
+            </article>
+        </section>
+
+        <section id="main-content-4" class="main-content container">
+
+            <div class="row">
+                <div id="page-work" class="page page-work">
+
+                    <div class="page-header">
+                        <div class="header-sprite header-sprite-work"></div>
+                        <h2>Work</h2>
+                        <h3>These look strangely familiar...</h3>
+                    </div>
+
+                    <div class="work-site-list row">
+                        <div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+                            <div class="work-img-column work-img-column-left">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                    <div class="work-img work-img-1" title="item-orr" data-target="#work-slideshow" data-slide-to="0"></div>
+                                </div>
+                            </div>
+                            <div class="work-img-column work-img-column-middle">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                    <div class="work-img work-img-3" title="item-lonestar" data-target="#work-slideshow" data-slide-to="1"></div>
+                                </div>
+                            </div>
+                            <div class="work-img-column work-img-column-right">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                                    <div class="work-img work-img-2" title="item-sewell" data-target="#work-slideshow" data-slide-to="2"></div>
+                                </div>
+                            </div>
+                            <div class="ribbon-row">
+                                <div class="col-sm-12">
+                                    <div class="ribbon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="work-slideshow" class="work-slideshow carousel slide row" data-interval="false">
+
+                        <div class="col-sm-12 col-lg-10 col-lg-offset-1">
+                            <div class="slideshow-controls-outer">
+                                <a href="#work-slideshow" class="slideshow-controls slideshow-controls-left" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a>
+                                <a href="#" class="slideshow-controls slideshow-controls-close" id="slideshow-controls-close" ><span class="glyphicon glyphicon-remove-circle"></span></a>
+                                <a href="#work-slideshow" class="slideshow-controls slideshow-controls-right" data-slide="next">Next <span class="glyphicon glyphicon-chevron-right"></span></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-10 col-lg-offset-1">
+                            <div id="carousel-inner" class="carousel-inner">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
 
 
-		<!-- 		<div id="turtle" class="turtle" data-stellar-ratio="2"></div> -->
-		<div id="turtle" class="turtle"></div>
+        <!--        <div id="turtle" class="turtle" data-stellar-ratio="2"></div> -->
+        <div id="turtle" class="turtle"></div>
 
-		<hr />
+        <hr />
 
-		<footer class="container">
-			<p>Thanks for visiting.</p>
-		</footer>
-	</div>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script type="text/javascript">
-	if (typeof jQuery == 'undefined')
-	{
-		document.write(unescape("%3Cscript src='js/jquery-2.0.3.min.js' type='text/javascript'%3E%3C/script%3E"));
-	}
-	</script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/modernizr.custom.00570.js"></script>
-	<script src="js/main.min.js"></script>
-	
+        <footer class="container">
+            <p>Thanks for visiting.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined')
+    {
+        document.write(unescape("%3Cscript src='js/jquery-2.0.3.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.00570.js"></script>
+    <script src="js/main.min.js"></script>
+
 </body>
 </html>

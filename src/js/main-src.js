@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-	// Enable Balloon animation	
+	// Enable Balloon animation
 	// $("#animate-balloon").click( function() {
 
 	// 	var balloonA = $("#parallax-balloon-bg-a");

@@ -11,6 +11,7 @@ var clean       = require('gulp-clean'),
     pngcrush    = require('imagemin-pngcrush'),
     jshint      = require('gulp-jshint'),
     livereload  = require('gulp-livereload'),
+    minifycss   = require('gulp-minify-css'),
     rename      = require('gulp-rename'),
     sass        = require('gulp-sass'),
     lr          = require('tiny-lr'),
@@ -39,6 +40,24 @@ gulp.task('sass', function() {
         }))
         .pipe(gulp.dest('dest/css'))
         .pipe(filesize())
+        .pipe(rename('style.min.css'))
+        .pipe(minifycss())
+        .pipe(gulp.dest('css'))
+        .pipe(filesize())
+        .on('error', gutil.log);
+});
+
+gulp.task('sass-bootstrap', function() {
+    return gulp.src('src/bootstrap/sass/bootstrap.scss')
+        .pipe(sass({
+            includePaths: ['src/bootstrap/sass']
+        }))
+        .pipe(gulp.dest('dest/css'))
+        .pipe(filesize())
+        .pipe(rename('bootstrap.min.css'))
+        .pipe(minifycss())
+        .pipe(gulp.dest('css'))
+        .pipe(filesize())
         .on('error', gutil.log);
 });
 
@@ -64,7 +83,6 @@ gulp.task('watch', function() {
         server.changed(file.path);
     };
     gulp.watch('src/css/*.scss', ['sass']);
-    // gulp.watch('src/js/*.js', ['lint', 'scripts']);
     gulp.watch('src/js/*.js', ['scripts']);
     gulp.watch('src/images/*', ['images']);
     gulp.watch(['dest/**']).on('change', reload);
@@ -72,4 +90,4 @@ gulp.task('watch', function() {
 
 // Default Task
 gulp.task('default', ['watch']);
-gulp.task('build', ['sass', 'lint', 'scripts', 'images']);
+gulp.task('build', ['sass', 'sass-bootstrap', 'scripts', 'images']);

@@ -1,0 +1,21 @@
+{
+  "name": "joeynguyen.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/joeynguyen/joeynguyen.com-v2",
+  "authors": [
+    "Joey Nguyen <jnn193@gmail.com>"
+  ],
+  "description": "my personal website",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}

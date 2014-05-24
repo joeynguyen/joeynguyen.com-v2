@@ -42,17 +42,11 @@ gulp.task('sass', function() {
         .on('error', gutil.log);
 });
 
-// Lint task
-gulp.task('lint', function() {
+// Lint, Concatenate, and Minify JS
+gulp.task('scripts', function() {
     return gulp.src('src/js/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
-        .on('error', gutil.log);
-});
-
-// Concatenate and Minify JS
-gulp.task('scripts', function() {
-    return gulp.src('src/js/*.js')
         .pipe(concat('main.js'))
         .pipe(gulp.dest('dest/js'))
         .pipe(filesize())
@@ -70,10 +64,12 @@ gulp.task('watch', function() {
         server.changed(file.path);
     };
     gulp.watch('src/css/*.scss', ['sass']);
-    gulp.watch('src/js/*.js', ['lint', 'scripts']);
+    // gulp.watch('src/js/*.js', ['lint', 'scripts']);
+    gulp.watch('src/js/*.js', ['scripts']);
     gulp.watch('src/images/*', ['images']);
     gulp.watch(['dest/**']).on('change', reload);
 });
 
 // Default Task
 gulp.task('default', ['watch']);
+gulp.task('build', ['sass', 'lint', 'scripts', 'images']);

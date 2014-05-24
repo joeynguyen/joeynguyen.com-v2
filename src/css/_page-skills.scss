@@ -18,6 +18,15 @@
 }
 .skill-box p {
 	text-align: center; 
+
+    a {
+        color: #CC5500;
+
+        &:hover, &:focus {
+            color: #414141;
+        }
+
+    }
 }
 .skill-title {
 	font-size: 20px;

@@ -7,14 +7,13 @@ var clean       = require('gulp-clean'),
     filesize    = require('gulp-filesize'),
     gutil       = require('gulp-util'),
     imagemin    = require('gulp-imagemin'),
-    newer       = require('gulp-newer'),
     pngcrush    = require('imagemin-pngcrush'),
+    newer       = require('gulp-newer'),
     jshint      = require('gulp-jshint'),
     livereload  = require('gulp-livereload'),
     minifycss   = require('gulp-minify-css'),
     rename      = require('gulp-rename'),
     sass        = require('gulp-sass'),
-    lr          = require('tiny-lr'),
     uglify      = require('gulp-uglify');
 
 // Minify images

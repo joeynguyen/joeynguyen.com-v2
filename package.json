@@ -1,7 +1,7 @@
 {
   "name": "joeynguyen-v2",
-  "version": "0.0.0",
-  "description": "joeynguyen-v2 site grunt build",
+  "version": "0.2.0",
+  "description": "joeynguyen-v2 site gulp build",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,13 +9,14 @@
   "author": "Joey Nguyen",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-compass": "~0.6.0",
-    "grunt-contrib-imagemin": "~0.3.0",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-newer": "~0.6.1",
+    // "grunt": "~0.4.1",
+    // "grunt-contrib-compass": "~0.6.0",
+    // "grunt-contrib-imagemin": "~0.3.0",
+    // "grunt-contrib-jshint": "~0.8.0",
+    // "grunt-contrib-uglify": "~0.2.7",
+    // "grunt-contrib-watch": "~0.5.3",
+    // "grunt-newer": "~0.6.1",
+    // "matchdep": "~0.3.0",
     "gulp": "^3.6.2",
     "gulp-clean": "^0.2.4",
     "gulp-concat": "^2.2.0",
@@ -31,7 +32,6 @@
     "gulp-uglify": "^0.3.0",
     "gulp-util": "^2.2.14",
     "imagemin-pngcrush": "^0.1.0",
-    "jshint-stylish": "^0.2.0",
-    "matchdep": "~0.3.0"
+    "jshint-stylish": "^0.2.0"
   }
 }

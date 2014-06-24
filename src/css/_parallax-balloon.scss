@@ -60,11 +60,11 @@
 		-ms-animation-direction: normal;
 		-ms-animation-delay: 0;
 		-ms-animation-play-state: running;
-		-ms-animation-fill-mode: forwards;	
+		-ms-animation-fill-mode: forwards;
 		animation-name: cloud-bg-a;
 		animation-duration: 10s;
 		animation-timing-function: linear;
-		animation-iteration-count: 1;	
+		animation-iteration-count: 1;
 		animation-direction: normal;
 		animation-delay: 0;
 		animation-play-state: running;
@@ -142,11 +142,11 @@
 		-ms-animation-direction: normal;
 		-ms-animation-delay: 0;
 		-ms-animation-play-state: running;
-		-ms-animation-fill-mode: forwards;	
+		-ms-animation-fill-mode: forwards;
 		animation-name: balloon;
 		animation-duration: 10s;
 		animation-timing-function: linear;
-		animation-iteration-count: 1;	
+		animation-iteration-count: 1;
 		animation-direction: normal;
 		animation-delay: 0;
 		animation-play-state: running;
@@ -223,11 +223,11 @@
 		-ms-animation-direction: normal;
 		-ms-animation-delay: 0;
 		-ms-animation-play-state: running;
-		-ms-animation-fill-mode: forwards;	
+		-ms-animation-fill-mode: forwards;
 		animation-name: cloud-bg-c;
 		animation-duration: 10s;
 		animation-timing-function: linear;
-		animation-iteration-count: 1;	
+		animation-iteration-count: 1;
 		animation-direction: normal;
 		animation-delay: 0;
 		animation-play-state: running;
@@ -305,11 +305,11 @@
 		-ms-animation-direction: normal;
 		-ms-animation-delay: 0;
 		-ms-animation-play-state: running;
-		-ms-animation-fill-mode: forwards;	
+		-ms-animation-fill-mode: forwards;
 		animation-name: cloud-bg-d;
 		animation-duration: 10s;
 		animation-timing-function: linear;
-		animation-iteration-count: 1;	
+		animation-iteration-count: 1;
 		animation-direction: normal;
 		animation-delay: 0;
 		animation-play-state: running;
@@ -394,7 +394,7 @@
 }
 .cloud-lg-a {
 	top: 118px;
-	left: 400px;		
+	left: 400px;
 }
 .cloud-lg-b {
 	top: 305px;
@@ -410,7 +410,11 @@
 }
 .cloud-md-c {
 	top: 250px;
-	left: 1375px;
+	left: 115%;
+}
+.cloud-md-d {
+	top: 68px;
+	left: 205%;
 }
 .cloud-sm-a {
 	top: 129px;
@@ -460,11 +464,19 @@
 	}
 	.cloud-lg-a {
 		top: 118px;
-		left: 76%;		
+		left: 76%;
 	}
 	.cloud-lg-b {
 		top: 305px;
 		left: 21%;
+	}
+	.cloud-lg-c {
+		top: 15px;
+		left: 144%;
+	}
+	.cloud-lg-d {
+		top: 232px;
+		left: 179%;
 	}
 	.cloud-md-a {
 		top: 150px;

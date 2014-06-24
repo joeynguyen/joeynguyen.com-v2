@@ -35,9 +35,9 @@ gulp.task('sass', function() {
     return gulp.src('src/css/style.scss')
         .pipe(sass({
             includePaths: ['src/css'],
-            imagePath: ['../../images'],
+            imagePath: ['../images'],
         }))
-        .pipe(gulp.dest('dest/css'))
+        .pipe(gulp.dest('css'))
         .pipe(filesize())
         .pipe(rename('style.min.css'))
         .pipe(minifycss())
@@ -51,7 +51,7 @@ gulp.task('sass-bootstrap', function() {
         .pipe(sass({
             includePaths: ['src/bootstrap/sass']
         }))
-        .pipe(gulp.dest('dest/css'))
+        .pipe(gulp.dest('css'))
         .pipe(filesize())
         .pipe(rename('bootstrap.min.css'))
         .pipe(minifycss())
@@ -66,7 +66,7 @@ gulp.task('scripts', function() {
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(concat('main.js'))
-        .pipe(gulp.dest('dest/js'))
+        .pipe(gulp.dest('js'))
         .pipe(filesize())
         .pipe(rename('main.min.js'))
         .pipe(uglify())
@@ -84,7 +84,7 @@ gulp.task('watch', function() {
     gulp.watch('src/css/*.scss', ['sass']);
     gulp.watch('src/js/*.js', ['scripts']);
     gulp.watch('src/images/*', ['images']);
-    gulp.watch(['dest/**']).on('change', reload);
+    gulp.watch(['css/**','js/**']).on('change', reload);
 });
 
 // Default Task

@@ -4,7 +4,7 @@ var gulp = require('gulp');
 // Include our Plugins
 var clean       = require('gulp-clean'),
     concat      = require('gulp-concat'),
-    filesize    = require('gulp-filesize'),
+    filesize    = require('gulp-size'),
     gutil       = require('gulp-util'),
     imagemin    = require('gulp-imagemin'),
     pngcrush    = require('imagemin-pngcrush'),
@@ -26,7 +26,7 @@ gulp.task('images', function() {
             use: [pngcrush()]
         }))
         .pipe(gulp.dest('images'))
-        .pipe(filesize())
+        .pipe(filesize({showFiles: true}))
         .on('error', gutil.log);
 });
 
@@ -38,11 +38,11 @@ gulp.task('sass', function() {
             imagePath: ['../images'],
         }))
         .pipe(gulp.dest('css'))
-        .pipe(filesize())
+        .pipe(filesize({showFiles: true}))
         .pipe(rename('style.min.css'))
         .pipe(minifycss())
         .pipe(gulp.dest('css'))
-        .pipe(filesize())
+        .pipe(filesize({showFiles: true}))
         .on('error', gutil.log);
 });
 
@@ -52,11 +52,11 @@ gulp.task('sass-bootstrap', function() {
             includePaths: ['src/bootstrap/sass']
         }))
         .pipe(gulp.dest('css'))
-        .pipe(filesize())
+        .pipe(filesize({showFiles: true}))
         .pipe(rename('bootstrap.min.css'))
         .pipe(minifycss())
         .pipe(gulp.dest('css'))
-        .pipe(filesize())
+        .pipe(filesize({showFiles: true}))
         .on('error', gutil.log);
 });
 
@@ -67,11 +67,11 @@ gulp.task('scripts', function() {
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(concat('main.js'))
         .pipe(gulp.dest('js'))
-        .pipe(filesize())
+        .pipe(filesize({showFiles: true}))
         .pipe(rename('main.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('js'))
-        .pipe(filesize())
+        .pipe(filesize({showFiles: true}))
         .on('error', gutil.log);
 });
 

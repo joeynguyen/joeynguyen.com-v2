@@ -12,7 +12,6 @@
     "gulp": "^3.8.6",
     "gulp-clean": "^0.2.4",
     "gulp-concat": "^2.2.0",
-    "gulp-size": "^0.4.0",
     "gulp-imagemin": "^0.5.0",
     "gulp-jshint": "^1.6.1",
     "gulp-less": "^1.2.3",
@@ -21,6 +20,7 @@
     "gulp-newer": "^0.3.0",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^0.7.1",
+    "gulp-size": "^0.4.0",
     "gulp-uglify": "^0.3.0",
     "gulp-util": "^2.2.20",
     "jshint-stylish": "^0.2.0"

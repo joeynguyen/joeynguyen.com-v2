@@ -2,7 +2,7 @@
 var gulp = require('gulp');
 
 // Include our Plugins
-var clean       = require('gulp-clean'),
+var rimraf      = require('gulp-rimraf'),
     concat      = require('gulp-concat'),
     filesize    = require('gulp-size'),
     gutil       = require('gulp-util'),

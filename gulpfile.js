@@ -16,7 +16,9 @@ var rimraf          = require('rimraf'),
     minifycss       = require('gulp-minify-css'),
     rename          = require('gulp-rename'),
     sass            = require('gulp-sass'),
-    uglify          = require('gulp-uglify');
+    uglify          = require('gulp-uglify'),
+    ghpages         = require('gh-pages'),
+    path            = require('path');
 
 // Minify images
 gulp.task('images', function() {
@@ -137,6 +139,14 @@ gulp.task('vendor', function() {
         }
     });
 
+});
+
+gulp.task('publish', function() {
+    ghpages.publish(path.join(__dirname, 'public'), function(err) {
+        if (err) {
+            return console.error(err);
+        }
+    });
 });
 
 // Default Task

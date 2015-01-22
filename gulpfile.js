@@ -147,7 +147,10 @@ gulp.task('make-public', function() {
 });
 
 gulp.task('publish', function() {
-    ghpages.publish(path.join(__dirname, 'public'), function(err) {
+    ghpages.publish(path.join(__dirname, 'public'), {
+        branch: 'master',
+        repo: 'https://github.com/joeynguyen/joeynguyen.github.io.git'
+    }, function(err) {
         if (err) {
             return console.error(err);
         }

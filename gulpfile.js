@@ -97,7 +97,7 @@ gulp.task('clean', function(cb){
     rimraf('./public/', cb);
 });
 
-gulp.task('vendor', function() {
+gulp.task('make-public', function() {
     fs.copy('cname', 'public/CNAME', function (err) {
         if (err) {
             return console.error(err);
@@ -156,4 +156,4 @@ gulp.task('publish', function() {
 
 // Default Task
 gulp.task('default', ['watch']);
-gulp.task('build', ['sass', 'sass-bootstrap', 'scripts', 'images', 'vendor']);
+gulp.task('build', ['sass', 'sass-bootstrap', 'scripts', 'images', 'make-public']);

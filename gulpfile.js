@@ -98,6 +98,11 @@ gulp.task('clean', function(cb){
 });
 
 gulp.task('vendor', function() {
+    fs.copy('cname', 'public/CNAME', function (err) {
+        if (err) {
+            return console.error(err);
+        }
+    });
     fs.copy('index.html', 'public/index.html', function (err) {
         if (err) {
             return console.error(err);

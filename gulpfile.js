@@ -18,7 +18,23 @@ var rimraf          = require('rimraf'),
     sass            = require('gulp-sass'),
     uglify          = require('gulp-uglify'),
     ghpages         = require('gh-pages'),
-    path            = require('path');
+    path            = require('path'),
+    tap             = require('gulp-tap'),
+    Handlebars      = require('Handlebars');
+
+// Compile HTML
+gulp.task('homepage', function() {
+    gulp.src("src/templates/index.hbs")
+        .pipe(tap(function(file, t) {
+            var template = Handlebars.compile(file.contents.toString());
+            var html = template({ title: "Gulp + Handlebars is easy"});
+            file.contents = new Buffer(html, "utf-8");
+        }))
+        .pipe(rename(function(path) {
+            path.extname = ".html";
+        }))
+        .pipe(gulp.dest("pages/"));
+});
 
 // Minify images
 gulp.task('images', function() {
@@ -44,8 +60,10 @@ gulp.task('sass', function() {
         .pipe(autoprefixer('last 2 version', 'ios 6', 'android 4'))
         .pipe(gulp.dest('public/css'))
         .pipe(filesize({showFiles: true}))
-        .pipe(rename('style.min.css'))
         .pipe(minifycss())
+        .pipe(rename(function(path) {
+            path.extname = ".min.css";
+        }))
         .pipe(gulp.dest('public/css'))
         .pipe(filesize({showFiles: true}))
         .on('error', gutil.log);
@@ -58,8 +76,10 @@ gulp.task('sass-bootstrap', function() {
         }))
         .pipe(gulp.dest('public/css'))
         .pipe(filesize({showFiles: true}))
-        .pipe(rename('bootstrap.min.css'))
         .pipe(minifycss())
+        .pipe(rename(function(path) {
+            path.extname = ".min.css";
+        }))
         .pipe(gulp.dest('public/css'))
         .pipe(filesize({showFiles: true}))
         .on('error', gutil.log);
@@ -73,8 +93,10 @@ gulp.task('scripts', function() {
         .pipe(concat('main.js'))
         .pipe(gulp.dest('public/js'))
         .pipe(filesize({showFiles: true}))
-        .pipe(rename('main.min.js'))
         .pipe(uglify())
+        .pipe(rename(function(path) {
+            path.extname = ".min.js";
+        }))
         .pipe(gulp.dest('public/js'))
         .pipe(filesize({showFiles: true}))
         .on('error', gutil.log);
@@ -97,7 +119,7 @@ gulp.task('clean', function(cb){
     rimraf('./public/', cb);
 });
 
-gulp.task('make-public', function() {
+gulp.task('add-to-public', function() {
     fs.copy('cname', 'public/CNAME', function (err) {
         if (err) {
             return console.error(err);
@@ -159,4 +181,4 @@ gulp.task('publish', function() {
 
 // Default Task
 gulp.task('default', ['watch']);
-gulp.task('build', ['sass', 'sass-bootstrap', 'scripts', 'images', 'make-public']);
+gulp.task('build', ['sass', 'sass-bootstrap', 'scripts', 'images', 'add-to-public']);

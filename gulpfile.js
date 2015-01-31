@@ -23,17 +23,18 @@ var rimraf          = require('rimraf'),
     Handlebars      = require('Handlebars');
 
 // Compile HTML
-gulp.task('homepage', function() {
-    gulp.src("src/templates/index.hbs")
+gulp.task('html', function() {
+    gulp.src("src/html/*.hbs")
         .pipe(tap(function(file, t) {
+            var parsedJSON = require('./src/html/' + path.basename(file.path, path.extname(file.path)) + '.json');
             var template = Handlebars.compile(file.contents.toString());
-            var html = template({ title: "Gulp + Handlebars is easy"});
+            var html = template(parsedJSON);
             file.contents = new Buffer(html, "utf-8");
         }))
         .pipe(rename(function(path) {
             path.extname = ".html";
         }))
-        .pipe(gulp.dest("pages/"));
+        .pipe(gulp.dest("html/"));
 });
 
 // Minify images

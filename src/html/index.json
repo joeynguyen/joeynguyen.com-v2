@@ -1,0 +1,50 @@
+{
+    "title": "Gulp + Handlebars is easy",
+    "name": "Charlie",
+    "skill-categories": [
+        {
+            "group": "Languages",
+            "items": [
+                {
+                    "name": "HTML"
+                },
+                {
+                    "name": "CSS"
+                },
+                {
+                    "name": "JavaScript"
+                },
+                {
+                    "name": "jQuery"
+                }
+            ]
+        },
+        {
+            "group": "Server Administration",
+            "items": [
+                {
+                    "name": "Ubuntu Linux"
+                },
+                {
+                    "name": "Bash"
+                },
+                {
+                    "name": "SSH,SCP,SFTP"
+                },
+                {
+                    "name": "Apache"
+                },
+                {
+                    "name": "SSL Certificates"
+                },
+                {
+                    "name": "Log Analysis"
+                },
+                {
+                    "name": "DNS Records"
+                }
+            ]
+        }
+    ]
+}
+

@@ -26,7 +26,7 @@ var rimraf          = require('rimraf'),
 gulp.task('html', function() {
     gulp.src("src/html/*.hbs")
         .pipe(tap(function(file, t) {
-            var parsedJSON = require('./src/html/' + path.basename(file.path, path.extname(file.path)) + '.json');
+            var parsedJSON = require('./src/html/json/' + path.basename(file.path, path.extname(file.path)) + '.json');
             var template = Handlebars.compile(file.contents.toString());
             var html = template(parsedJSON);
             file.contents = new Buffer(html, "utf-8");

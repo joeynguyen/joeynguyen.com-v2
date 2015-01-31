@@ -4,17 +4,17 @@
     <title>{{ title }}</title>
 </head>
 <body>
-    <p>Hello there, {{name}}!</p>
+    <p>Hello there, {{ name }}!</p>
 
-        {{#each skill-categories}}
+        {{#each skill-categories }}
         <div class="skill-box fade">
-            <p class="skill-title">{{group}}</p>
+            <p class="skill-title">{{ group }}</p>
             <ul>
-            {{#each items}}
-                <li>{{name}}</li>
-            {{/each}}
+            {{#each items }}
+                <li>{{ name }}</li>
+            {{/each }}
             </ul>
         </div>
-        {{/each}}
+        {{/each }}
 </body>
 </html>

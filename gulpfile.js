@@ -26,7 +26,7 @@ gulp.task('html', function() {
     return gulp
         .src('src/html/*.hbs')
         .pipe(hb({
-            data: './src/html/json/*.{js,json}',
+            data: './src/html/data/*.{js,json}',
             helpers: './node_modules/handlebars-layouts/index.js',
             partials: './src/html/partials/*.hbs'
         }))

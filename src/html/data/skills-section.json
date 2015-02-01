@@ -24,29 +24,36 @@
                     ]
                 },
                 {
-                    "group": "Server Administration",
-                    "icon-type": "wrench",
+                    "group": "Technologies",
+                    "icon-type": "phone",
                     "items": [
                         {
-                            "name": "Ubuntu Linux"
+                            "name": "Bootstrap 3"
                         },
                         {
-                            "name": "Bash"
+                            "name": "Foundation 5"
                         },
                         {
-                            "name": "SSH,SCP,SFTP"
+                            "name": "SASS"
                         },
                         {
-                            "name": "Apache"
+                            "name": "LESS"
+
                         },
                         {
-                            "name": "SSL Certificates"
+                            "name": "Handlebars"
                         },
                         {
-                            "name": "Log Analysis"
+                            "name": "Swig"
                         },
                         {
-                            "name": "DNS Records"
+                            "name": "Node.js"
+                        },
+                        {
+                            "name": "Express"
+                        },
+                        {
+                            "name": "Bower"
                         }
                     ]
                 }
@@ -107,37 +114,6 @@
         {
             "column": [
                 {
-                    "group": "Technologies",
-                    "icon-type": "phone",
-                    "items": [
-                        {
-                            "name": "Bootstrap 3"
-                        },
-                        {
-                            "name": "Foundation 5"
-                        },
-                        {
-                            "name": "SASS"
-                        },
-                        {
-                            "name": "LESS"
-
-                        },
-                        {
-                            "name": "Handlebars"
-                        },
-                        {
-                            "name": "Swig"
-                        },
-                        {
-                            "name": "Node.js"
-                        },
-                        {
-                            "name": "Express"
-                        }
-                    ]
-                },
-                {
                     "group": "Workflow Automation",
                     "icon-type": "random",
                     "items": [
@@ -161,6 +137,33 @@
                         },
                         {
                             "name": "file minification"
+                        }
+                    ]
+                },
+                {
+                    "group": "Server Administration",
+                    "icon-type": "wrench",
+                    "items": [
+                        {
+                            "name": "Ubuntu Linux"
+                        },
+                        {
+                            "name": "Bash"
+                        },
+                        {
+                            "name": "SSH,SCP,SFTP"
+                        },
+                        {
+                            "name": "Apache"
+                        },
+                        {
+                            "name": "SSL Certificates"
+                        },
+                        {
+                            "name": "Log Analysis"
+                        },
+                        {
+                            "name": "DNS Records"
                         }
                     ]
                 }

@@ -19,22 +19,32 @@ var rimraf          = require('rimraf'),
     uglify          = require('gulp-uglify'),
     ghpages         = require('gh-pages'),
     path            = require('path'),
-    tap             = require('gulp-tap'),
-    Handlebars      = require('Handlebars');
+    hb              = require('gulp-hb');
 
 // Compile HTML
 gulp.task('html', function() {
-    gulp.src("src/html/*.hbs")
-        .pipe(tap(function(file, t) {
-            var parsedJSON = require('./src/html/json/' + path.basename(file.path, path.extname(file.path)) + '.json');
-            var template = Handlebars.compile(file.contents.toString());
-            var html = template(parsedJSON);
-            file.contents = new Buffer(html, "utf-8");
+    return gulp
+        .src('src/html/*.hbs')
+        .pipe(hb({
+            data: './src/html/json/*.{js,json}',
+            helpers: './node_modules/handlebars-layouts/index.js',
+            partials: './src/html/partials/*.hbs'
         }))
         .pipe(rename(function(path) {
             path.extname = ".html";
         }))
-        .pipe(gulp.dest("html/"));
+        .pipe(gulp.dest('./html/'));
+    // gulp.src("src/html/index.hbs")
+    //     .pipe(tap(function(file, t) {
+    //         var parsedJSON = './src/html/js/' + path.basename(file.path, path.extname(file.path)) + '.js'.contents.toString;
+    //         var template = Handlebars.compile(file.contents.toString());
+    //         var html = template(parsedJSON);
+    //         file.contents = new Buffer(html, "utf-8");
+    //     }))
+    //     .pipe(rename(function(path) {
+    //         path.extname = ".html";
+    //     }))
+    //     .pipe(gulp.dest("html/"));
 });
 
 // Minify images
@@ -120,7 +130,7 @@ gulp.task('clean', function(cb){
     rimraf('./public/', cb);
 });
 
-gulp.task('add-to-public', function() {
+gulp.task('copy', function() {
     fs.copy('cname', 'public/CNAME', function (err) {
         if (err) {
             return console.error(err);
@@ -182,4 +192,4 @@ gulp.task('publish', function() {
 
 // Default Task
 gulp.task('default', ['watch']);
-gulp.task('build', ['sass', 'sass-bootstrap', 'scripts', 'images', 'add-to-public']);
+gulp.task('build', ['sass', 'sass-bootstrap', 'scripts', 'images', 'copy']);

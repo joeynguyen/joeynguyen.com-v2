@@ -1,9 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ job }}</title>
-</head>
-<body>
-    <p>Hello there, {{company}}!</p>
-</body>
-</html>
+{{#each work-items}}
+<div id="item-{{ shortName }}" alt="{{ @index }}" class="item">
+    <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-0">
+        <div class="portfolio-image portfolio-image-{{ imgNum }}"></div>
+    </div>
+    <div class="col-sm-12 col-lg-4 col-lg-offset-0">
+        <div class="portfolio-content">
+            <h4><a href="http://{{ url }}" target="_blank">{{ name }}</a></h4>
+            <ul>
+                <li>
+                    <span class="glyphicon glyphicon-globe"></span>
+                    <span class="client-label">Website:</span>
+                    <a class="client-prop" href="http://{{ url }}" target="_blank">{{ url }}</a>
+                </li>
+                <li>
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <span class="client-label">Status:</span>
+                    <span class="client-prop">{{ status }}</span>
+
+                </li>
+            </ul>
+            {{{ description }}}
+        </div>
+    </div>
+</div>
+{{/each}}

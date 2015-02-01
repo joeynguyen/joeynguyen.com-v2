@@ -1,0 +1,21 @@
+{
+    "work-title": "Work",
+    "work-subtitle": "These look strangely familiar...",
+    "work-examples": [
+        {
+            "name": "orr",
+            "columnPos": "left",
+            "imgNum": 1
+        },
+        {
+            "name": "sewell",
+            "columnPos": "middle",
+            "imgNum": 2
+        },
+        {
+            "name": "lonestar",
+            "columnPos": "right",
+            "imgNum": 3
+        }
+    ]
+}

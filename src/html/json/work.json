@@ -1,4 +1,28 @@
 {
-    "job": "Front End Dev",
-    "company": "Dealertrack"
+    "work-items": [
+        {
+            "name": "Gregg Orr Auto",
+            "shortName": "orr",
+            "url": "www.greggorrauto.com",
+            "status": "Inactive",
+            "imgNum": 1,
+            "description": "<p>A very challenging (i.e., fun) client site that I built. The client wanted several custom features that we hadn't yet built for any other clients. Therefore, I had the opportunity to code some things from scratch.</p><p>The biggest challenge was the New and Used mega dropdowns that appear when you hover over their parent links in the navigation. The code to pull the vehicles from the database was an already built feature, but I had to tweak it slightly to separate the vehicle makes for New vehicles into tabs.</p><p>Due to the size of the images and the amount of database calls that would be required to show all of the vehicles for every make, loading every make on inital site load would be a huge performance hit to both the user's load times and for our servers. Therefore, I used AJAX to load each make individually when clicked on and killed the process for the previous make to keep page responsiveness optimal. Additionly, to improve the load speed of makes that had already been loaded, the data for them was cached for quick recalls.</p>"
+        },
+        {
+            "name": "Sewell",
+            "shortName": "sewell",
+            "url": "www.sewell.com",
+            "status": "Inactive",
+            "imgNum": 2,
+            "description": "<p>One of the most beautifully-designed client sites I've had the chance to work on. I didn't initially build this site, but for a while I was one of only two developers tasked with updating it on an ongoing basis. Being that Sewell is one of our most distinguished independent dealership clients, it was a big responsibility. Almost all of the code for their site has been customized in some way instead of relying on code from our global templates that most sites use.</p>"
+        },
+        {
+            "name": "Lone Star Conversions",
+            "shortName": "lonestar",
+            "url": "www.lsconversions.com",
+            "status": "Inactive",
+            "imgNum": 3,
+            "description": "<p>While the background for this site looks amazing, getting the design to play well with all of the pages on the site was a challenge. The background in the initial Photoshop mockup worked fine for the home page and other pages similar in height, but for it to work on very tall pages like our inventory search and vehicle detail pages, the image for a repeating background had to be cut in very exact detail. The HTML code structure also had to be altered significantly compared to most client sites to implement the footer's design to the designer's satisfaction.</p>"
+        }
+    ]
 }

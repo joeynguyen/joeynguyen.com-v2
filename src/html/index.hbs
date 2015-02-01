@@ -1,20 +1,50 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ title }}</title>
-</head>
-<body>
-    <p>Hello there, {{ name }}!</p>
+{{#extend "layout"}}
+    {{#content 'body'}}
+        {{> about-section }}
 
-        {{#each skill-categories }}
-        <div class="skill-box fade">
-            <p class="skill-title">{{ group }}</p>
-            <ul>
-            {{#each items }}
-                <li>{{ name }}</li>
-            {{/each }}
-            </ul>
+        <div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
+            <div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
         </div>
-        {{/each }}
-</body>
-</html>
+
+        <section id="parallax-first" class="parallax-window parallax-window-first hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
+            <div class="article-outer-box">
+                <div class="article-middle-box">
+                    <div class="article-inner-box">
+                        <div class="article-decoration"></div>
+                        <article>The more I live, the more I learn. The more I learn, the more I realize, the less I know. <br />
+                            <span>- Michel Legrand</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{> skills-section }}
+
+        <div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
+            <div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
+        </div>
+
+        <section id="parallax-second" class="parallax-window parallax-window-second hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
+            <article>The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less. <br />- Socrates</article>
+        </section>
+
+        {{> contact-section }}
+
+        <div class="col-sm-12 col-md-8 col-md-offset-2 hidden-md hidden-lg">
+            <div class="ribbon-outer"><div class="ribbon"></div><div class="hr"></div></div>
+        </div>
+
+        <section id="parallax-third" class="parallax-window parallax-window-third hidden-xs hidden-sm" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="-50">
+            <article><span>CREDITS</span><br />
+                <a href="http://f6design.com/">Jonathan Nicol</a> for the hot air balloon image.<br />
+                <a href="http://coverphotofinder.com/profile/1461953431">John Bishop</a> for the thundercloud image.<br />
+                <a href="http://www.flickr.com/photos/achew/">Tian Chew Lim</a> for the Amazon box robots image.<br />
+                Whoever created the computer internal hardware image (sorry couldn't find author).
+            </article>
+        </section>
+
+        {{> work-section }}
+
+    {{/content}}
+{{/extend}}

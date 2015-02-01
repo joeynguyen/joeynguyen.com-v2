@@ -1,0 +1,31 @@
+<section id="main-content-2" class="main-content container">
+    <div class="row">
+        <div id="page-skills" class="page page-skills">
+
+            <div class="page-header">
+                <div class="header-sprite header-sprite-skills"></div>
+                <h2>{{ skills-title }}</h2>
+                <h3>{{ skills-subtitle }}</h3>
+            </div>
+
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                {{#each skills-categories }}
+                <div class="col-sm-4">
+                    {{#each column }}
+                    <div class="skill-box {{#if @first}}skill-box-top {{/if}}{{#if groupClasses}}{{ groupClasses }} {{/if}}fade">
+                        <p><span class="glyphicon glyphicon-{{ icon-type }}"></span></p>
+                        <p class="skill-title">{{ group }}</p>
+                        <ul>
+                        {{#each items }}
+                            <li>{{ name }}</li>
+                        {{/each }}
+                        </ul>
+                    </div>
+                    {{/each }}
+                </div>
+                {{/each }}
+            </div><!-- end Skills section -->
+
+        </div>
+    </div>
+</section>

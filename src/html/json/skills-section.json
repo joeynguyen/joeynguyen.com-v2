@@ -1,0 +1,167 @@
+{
+    "skills-title": "Skills",
+    "skills-subtitle": "I Can Do Stuff",
+    "skills-categories": [
+        {
+            "column": [
+                {
+                    "group": "Languages",
+                    "icon-type": "book",
+                    "groupClasses": "skill-box-first",
+                    "items": [
+                        {
+                            "name": "HTML"
+                        },
+                        {
+                            "name": "CSS"
+                        },
+                        {
+                            "name": "JavaScript"
+                        },
+                        {
+                            "name": "jQuery"
+                        }
+                    ]
+                },
+                {
+                    "group": "Server Administration",
+                    "icon-type": "wrench",
+                    "items": [
+                        {
+                            "name": "Ubuntu Linux"
+                        },
+                        {
+                            "name": "Bash"
+                        },
+                        {
+                            "name": "SSH,SCP,SFTP"
+                        },
+                        {
+                            "name": "Apache"
+                        },
+                        {
+                            "name": "SSL Certificates"
+                        },
+                        {
+                            "name": "Log Analysis"
+                        },
+                        {
+                            "name": "DNS Records"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "column": [
+                {
+                    "group": "Technologies",
+                    "icon-type": "phone",
+                    "items": [
+                        {
+                            "name": "Bootstrap 3"
+                        },
+                        {
+                            "name": "Foundation 5"
+                        },
+                        {
+                            "name": "SASS"
+                        },
+                        {
+                            "name": "LESS"
+
+                        },
+                        {
+                            "name": "Handlebars"
+                        },
+                        {
+                            "name": "Swig"
+                        },
+                        {
+                            "name": "Node.js"
+                        }
+                    ]
+                },
+                {
+                    "group": "Version Control",
+                    "icon-type": "transfer",
+                    "items": [
+                        {
+                            "name": "Git"
+                        },
+                        {
+                            "name": "Subversion"
+                        }
+                    ]
+                },
+                {
+                    "group": "Website Management",
+                    "icon-type": "cog",
+                    "items": [
+                        {
+                            "name": "SEO"
+                        },
+                        {
+                            "name": "Google Analytics"
+                        },
+                        {
+                            "name": "Wordpress"
+                        },
+                        {
+                            "name": "Drupal"
+                        },
+                        {
+                            "name": "SugarCRM"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "column": [
+                {
+                    "group": "Text Editors",
+                    "icon-type": "pencil",
+                    "items": [
+                        {
+                            "name": "Vim"
+                        },
+                        {
+                            "name": "Sublime Text 3"
+                        },
+                        {
+                            "name": "Coda"
+                        }
+                    ]
+                },
+                {
+                    "group": "Workflow Automation",
+                    "icon-type": "random",
+                    "items": [
+                        {
+                            "name": "Yeoman:"
+                        },
+                        {
+                            "name": "project scaffolding"
+                        },
+                        {
+                            "name": "Grunt/Gulp:"
+                        },
+                        {
+                            "name": "Javascript linting"
+                        },
+                        {
+                            "name": "image optimization"
+                        },
+                        {
+                            "name": "file concatenation"
+                        },
+                        {
+                            "name": "file minification"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

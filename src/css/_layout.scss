@@ -1,6 +1,6 @@
-.site {
+.site { // This class's styles are needed for parallax images to work correctly
 	overflow: hidden;
-	position: relative;	
+	position: relative;
 }
 .main-content {
 	z-index: 100;
@@ -36,7 +36,7 @@
 	.page {
 		overflow: hidden;
 		margin: 40px 0;
-	}	
+	}
 }
 .page-header {
 	background: image-url('page-header.png') center bottom no-repeat;
@@ -117,11 +117,11 @@ z-index: 10;
 		-ms-animation-direction: normal;
 		-ms-animation-delay: 0;
 		-ms-animation-play-state: running;
-		-ms-animation-fill-mode: forwards;	
+		-ms-animation-fill-mode: forwards;
 		animation-name: turtle;
 		animation-duration: 60s;
 		animation-timing-function: linear;
-		animation-iteration-count: 1;	
+		animation-iteration-count: 1;
 		animation-direction: normal;
 		animation-delay: 0;
 		animation-play-state: running;

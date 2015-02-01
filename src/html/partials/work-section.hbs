@@ -1,0 +1,49 @@
+<section id="main-content-4" class="main-content container">
+
+    <div class="row">
+        <div id="page-work" class="page page-work">
+
+            <div class="page-header">
+                <div class="header-sprite header-sprite-work"></div>
+                <h2>{{ work-title }}</h2>
+                <h3>{{ work-subtitle }}</h3>
+            </div>
+
+            <div class="work-site-list row">
+                <div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+                    {{#each work-examples}}
+                    <div class="work-img-column work-img-column-{{ columnPos }}">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="work-img work-img-{{ imgNum }}" title="item-{{ name }}" data-target="#work-slideshow" data-slide-to="{{ @index }}"></div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    <div class="ribbon-row">
+                        <div class="col-sm-12">
+                            <div class="ribbon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="work-slideshow" class="work-slideshow carousel slide row" data-interval="false">
+
+                <div class="col-sm-12 col-lg-10 col-lg-offset-1">
+                    <div class="slideshow-controls-outer">
+                        <a href="#work-slideshow" class="slideshow-controls slideshow-controls-left" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a>
+                        <a href="#" class="slideshow-controls slideshow-controls-close" id="slideshow-controls-close" ><span class="glyphicon glyphicon-remove-circle"></span></a>
+                        <a href="#work-slideshow" class="slideshow-controls slideshow-controls-right" data-slide="next">Next <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-10 col-lg-offset-1">
+                    <div id="carousel-inner" class="carousel-inner">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section><!-- end Work section -->

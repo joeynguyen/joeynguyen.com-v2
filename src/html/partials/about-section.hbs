@@ -1,0 +1,30 @@
+<section id="main-content-1" class="main-content container">
+
+    <div class="row">
+        <div id="page-about" class="page page-about">
+
+            <div class="page-header">
+                <div class="header-sprite header-sprite-about"></div>
+                <h2>{{ about-title }}</h2>
+                <h3>{{ about-subtitle }}</h3>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 about-text">
+                {{{ about-text }}}
+            </div>
+
+            <div id="skillLevel" class="skill-level col-sm-6 col-md-6 col-lg-5 col-lg-offset-0">
+                {{#each skillType}}
+                <div class="progress">
+                    <div class="progress-bar progress-bar-norris" role="progressbar" aria-valuenow="{{ level }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ level }}%">
+                        <span class="sr-only">{{ level }}% Expertise</span>
+                    </div>
+                    <div class="progress-bar-label">{{ name }}</div>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+    </div>
+
+</section><!-- end About section -->

@@ -55,34 +55,6 @@
         {
             "column": [
                 {
-                    "group": "Technologies",
-                    "icon-type": "phone",
-                    "items": [
-                        {
-                            "name": "Bootstrap 3"
-                        },
-                        {
-                            "name": "Foundation 5"
-                        },
-                        {
-                            "name": "SASS"
-                        },
-                        {
-                            "name": "LESS"
-
-                        },
-                        {
-                            "name": "Handlebars"
-                        },
-                        {
-                            "name": "Swig"
-                        },
-                        {
-                            "name": "Node.js"
-                        }
-                    ]
-                },
-                {
                     "group": "Version Control",
                     "icon-type": "transfer",
                     "items": [
@@ -91,6 +63,21 @@
                         },
                         {
                             "name": "Subversion"
+                        }
+                    ]
+                },
+                {
+                    "group": "Text Editors",
+                    "icon-type": "pencil",
+                    "items": [
+                        {
+                            "name": "Vim"
+                        },
+                        {
+                            "name": "Sublime Text 3"
+                        },
+                        {
+                            "name": "Coda"
                         }
                     ]
                 },
@@ -120,17 +107,33 @@
         {
             "column": [
                 {
-                    "group": "Text Editors",
-                    "icon-type": "pencil",
+                    "group": "Technologies",
+                    "icon-type": "phone",
                     "items": [
                         {
-                            "name": "Vim"
+                            "name": "Bootstrap 3"
                         },
                         {
-                            "name": "Sublime Text 3"
+                            "name": "Foundation 5"
                         },
                         {
-                            "name": "Coda"
+                            "name": "SASS"
+                        },
+                        {
+                            "name": "LESS"
+
+                        },
+                        {
+                            "name": "Handlebars"
+                        },
+                        {
+                            "name": "Swig"
+                        },
+                        {
+                            "name": "Node.js"
+                        },
+                        {
+                            "name": "Express"
                         }
                     ]
                 },

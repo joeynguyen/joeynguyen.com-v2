@@ -33,7 +33,7 @@ gulp.task('html', function() {
         .pipe(rename(function(path) {
             path.extname = ".html";
         }))
-        .pipe(gulp.dest('./html/'));
+        .pipe(gulp.dest('./public/'));
     // gulp.src("src/html/index.hbs")
     //     .pipe(tap(function(file, t) {
     //         var parsedJSON = './src/html/js/' + path.basename(file.path, path.extname(file.path)) + '.js'.contents.toString;
@@ -136,16 +136,16 @@ gulp.task('copy', function() {
             return console.error(err);
         }
     });
-    fs.copy('index.html', 'public/index.html', function (err) {
-        if (err) {
-            return console.error(err);
-        }
-    });
-    fs.copy('work.html', 'public/work.html', function (err) {
-        if (err) {
-            return console.error(err);
-        }
-    });
+    // fs.copy('index.html', 'public/index.html', function (err) {
+    //     if (err) {
+    //         return console.error(err);
+    //     }
+    // });
+    // fs.copy('work.html', 'public/work.html', function (err) {
+    //     if (err) {
+    //         return console.error(err);
+    //     }
+    // });
     fs.mkdirs('public/fonts/', function (err) {
         if (err) {
             return console.error(err);
@@ -192,4 +192,4 @@ gulp.task('publish', function() {
 
 // Default Task
 gulp.task('default', ['watch']);
-gulp.task('build', ['sass', 'sass-bootstrap', 'scripts', 'images', 'copy']);
+gulp.task('build', ['html', 'sass', 'sass-bootstrap', 'scripts', 'images', 'copy']);

@@ -15,11 +15,9 @@
                     <div class="skill-box {{#if @first}}skill-box-top {{/if}}{{#if groupClasses}}{{ groupClasses }} {{/if}}fade">
                         <p><span class="glyphicon glyphicon-{{ icon-type }}"></span></p>
                         <p class="skill-title">{{ group }}</p>
-                        <ul>
                         {{#each items }}
-                            <li>{{ name }}</li>
+                        <p>{{ name }}</p>
                         {{/each }}
-                        </ul>
                     </div>
                     {{/each }}
                 </div>

@@ -1,7 +1,7 @@
 {
     "about-title": "About Me",
     "about-subtitle": "Coder of the Web and Devourer of all the Ice Cream",
-    "about-text": "<p>Hi, I'm Joey Nguyen. Welcome to my personal website! I'm currently a front end developer at Dealertrack Technologies in Dallas, TX where I work on a team that's building a new and improved web app for our business customers, following the Agile (Scrum) methodology. Outside of work, I'm focusing on improving my skills in technologies such as AngularJS, Node.js, Express, and MongoDB. I also have a Beaglebone Black that I'm playing around with. A couple quirks about me: I'm a big fan of standing desks and mechanical keyboards.</p><p>Note: While I do believe support for IE 8 is important for business websites, I've made the conscious decision not to support it with my personal site.</p>",
+    "about-text": "<p>Hi, I'm Joey Nguyen. Welcome to my personal website! I'm currently a software engineer at Cox Automtive in Dallas, TX where I work on a Scrum team that's responsible for building software for the Dealer.com web platform. Outside of work, I'm constantly reading and learning to improve myself and am currently working on a fun side project using technologies such as React, Redux, Electron, PouchDB, and Webpack. A couple quirks about me: I'm a big fan of standing desks and mechanical keyboards.</p><p>Note: The code for building this website hasn't been updated since February 2015 and aren't representive of my current skill set.</p>",
     "skillType": [
         {
             "name": "Photoshop Slicing",

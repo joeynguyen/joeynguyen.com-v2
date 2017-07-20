@@ -1,23 +1,23 @@
 {
     "about-title": "About Me",
     "about-subtitle": "Coder of the Web and Devourer of all the Ice Cream",
-    "about-text": "<p>Hi, I'm Joey Nguyen. Welcome to my personal website! I'm currently a software engineer at Cox Automtive in Dallas, TX where I work on a Scrum team that's responsible for building software for the Dealer.com web platform. Outside of work, I'm constantly reading and learning to improve myself and am currently working on a fun side project using technologies such as React, Redux, Electron, PouchDB, and Webpack. A couple quirks about me: I'm a big fan of standing desks and mechanical keyboards.</p><p>Note: The code for building this website hasn't been updated since February 2015 and aren't representive of my current skill set.</p>",
+    "about-text": "<p>Hi, I'm Joey Nguyen. Welcome to my personal website! I'm currently a software engineer at Cox Automtive in Dallas, TX where I work on a Scrum team that's responsible for building software for the Dealer.com web platform. Outside of work, I'm constantly reading and learning to improve myself and am currently working on a fun side project using technologies such as React, Redux, Electron, and PouchDB - <a href=\"https://github.com/joeynguyen/spendless/\">https://github.com/joeynguyen/spendless/</a>.</p><p> A couple quirks about me - I'm a big fan of standing desks and mechanical keyboards.</p><p>Note: The code for building this website hasn't been updated since February 2015 and aren't representive of my current skill set.</p>",
     "skillType": [
         {
-            "name": "Photoshop Slicing",
-            "level": 70
+            "name": "Programming",
+            "level": 85
         },
         {
             "name": "Command Line",
             "level": 80
         },
         {
-            "name": "Programming",
-            "level": 50
-        },
-        {
             "name": "Workflow Automation",
             "level": 70
+        },
+        {
+            "name": "Photoshop Slicing",
+            "level": 75
         }
     ]
 }

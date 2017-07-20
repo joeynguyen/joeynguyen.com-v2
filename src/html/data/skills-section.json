@@ -5,18 +5,28 @@
         {
             "column": [
                 {
-                    "group": "Languages",
-                    "icon-type": "book",
+                    "group": "JavaScript",
+                    "icon-type": "globe",
                     "groupClasses": "skill-box-first",
                     "items": [
                         {
-                            "name": "HTML"
+                            "name": "ES6/2015"
                         },
                         {
-                            "name": "CSS"
+                            "name": "React"
                         },
                         {
-                            "name": "JavaScript"
+                            "name": "Redux"
+                        },
+                        {
+                            "name": "Node"
+
+                        },
+                        {
+                            "name": "Express"
+                        },
+                        {
+                            "name": "Electron"
                         },
                         {
                             "name": "jQuery"
@@ -24,36 +34,38 @@
                     ]
                 },
                 {
-                    "group": "Technologies",
-                    "icon-type": "phone",
+                    "group": "Build Tools",
+                    "icon-type": "wrench",
                     "items": [
                         {
-                            "name": "Bootstrap 3"
+                            "name": "Webpack"
                         },
                         {
-                            "name": "Foundation 5"
+                            "name": "Babel"
                         },
                         {
-                            "name": "SASS"
+                            "name": "Browserify"
                         },
                         {
-                            "name": "LESS"
-
+                            "name": "Grunt/Gulp"
                         },
                         {
-                            "name": "Handlebars"
-                        },
-                        {
-                            "name": "Swig"
-                        },
-                        {
-                            "name": "Node.js"
-                        },
-                        {
-                            "name": "Express"
+                            "name": "Yeoman"
                         },
                         {
                             "name": "Bower"
+                        }
+                    ]
+                },
+                {
+                    "group": "Databases",
+                    "icon-type": "hdd",
+                    "items": [
+                        {
+                            "name": "MongoDB"
+                        },
+                        {
+                            "name": "PouchDB"
                         }
                     ]
                 }
@@ -62,8 +74,35 @@
         {
             "column": [
                 {
+                    "group": "Testing",
+                    "icon-type": "search",
+                    "items": [
+                        {
+                            "name": "Enzyme"
+                        },
+                        {
+                            "name": "Mocha"
+                        },
+                        {
+                            "name": "Chai"
+                        },
+                        {
+                            "name": "Gemini"
+                        },
+                        {
+                            "name": "WebdriverIO"
+                        },
+                        {
+                            "name": "Cucumber"
+                        },
+                        {
+                            "name": "Gherkin"
+                        }
+                    ]
+                },
+                {
                     "group": "Version Control",
-                    "icon-type": "transfer",
+                    "icon-type": "random",
                     "items": [
                         {
                             "name": "Git"
@@ -74,17 +113,14 @@
                     ]
                 },
                 {
-                    "group": "Text Editors",
-                    "icon-type": "pencil",
+                    "group": "Command Line",
+                    "icon-type": "usd",
                     "items": [
                         {
-                            "name": "Vim"
+                            "name": "Zsh"
                         },
                         {
-                            "name": "Sublime Text 3"
-                        },
-                        {
-                            "name": "Coda"
+                            "name": "Bash"
                         }
                     ]
                 },
@@ -93,19 +129,10 @@
                     "icon-type": "cog",
                     "items": [
                         {
-                            "name": "SEO"
+                            "name": "SEO Optimization"
                         },
                         {
                             "name": "Google Analytics"
-                        },
-                        {
-                            "name": "Wordpress"
-                        },
-                        {
-                            "name": "Drupal"
-                        },
-                        {
-                            "name": "SugarCRM"
                         }
                     ]
                 }
@@ -114,56 +141,53 @@
         {
             "column": [
                 {
-                    "group": "Workflow Automation",
-                    "icon-type": "random",
+                    "group": "Styling",
+                    "icon-type": "align-center",
                     "items": [
                         {
-                            "name": "Yeoman:"
+                            "name": "CSS3"
                         },
                         {
-                            "name": "project scaffolding"
+                            "name": "SASS"
                         },
                         {
-                            "name": "Grunt/Gulp:"
-                        },
-                        {
-                            "name": "Javascript linting"
-                        },
-                        {
-                            "name": "image optimization"
-                        },
-                        {
-                            "name": "file concatenation"
-                        },
-                        {
-                            "name": "file minification"
+                            "name": "LESS"
                         }
                     ]
                 },
                 {
-                    "group": "Server Administration",
-                    "icon-type": "wrench",
+                    "group": "UI Frameworks",
+                    "icon-type": "briefcase",
                     "items": [
                         {
-                            "name": "Ubuntu Linux"
+                            "name": "Twitter Bootstrap"
                         },
                         {
-                            "name": "Bash"
+                            "name": "Ant Design"
                         },
                         {
-                            "name": "SSH,SCP,SFTP"
+                            "name": "Zurb Foundation"
+                        }
+                    ]
+                },
+                {
+                    "group": "Editors",
+                    "icon-type": "pencil",
+                    "items": [
+                        {
+                            "name": "Vim"
                         },
                         {
-                            "name": "Apache"
-                        },
+                            "name": "Visual Studio Code"
+                        }
+                    ]
+                },
+                {
+                    "group": "Design",
+                    "icon-type": "picture",
+                    "items": [
                         {
-                            "name": "SSL Certificates"
-                        },
-                        {
-                            "name": "Log Analysis"
-                        },
-                        {
-                            "name": "DNS Records"
+                            "name": "Photoshop"
                         }
                     ]
                 }
